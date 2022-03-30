@@ -1,0 +1,120 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+- name: subscriptionId
+  value: '73352462-5185-4eab-afca-eed6b857bbe0'
+- name: resourceGroup
+  value: 'BackendRewrite'
+- name: containerRegistryNameDev
+  value: crbackendrewritedev
+- name: containerConnectionDev
+  value: '{"loginServer":"$(containerRegistryNameDev).azurecr.io", "id" : "/subscriptions/$(subscriptionId)/resourceGroups/$(resourceGroup)/providers/Microsoft.ContainerRegistry/registries/$(containerRegistryNameDev)"}'
+- name: containerRegistryNameTest
+  value: crbackendrewritetest
+- name: containerConnectionTest
+  value: '{"loginServer":"$(containerRegistryNameTest).azurecr.io", "id" : "/subscriptions/$(subscriptionId)/resourceGroups/$(resourceGroup)/providers/Microsoft.ContainerRegistry/registries/$(containerRegistryNameTest)"}'
+- name: containerRegistryNameStage
+  value: crbackendrewritestage
+- name: containerConnectionStage
+  value: '{"loginServer":"$(containerRegistryNameStage).azurecr.io", "id" : "/subscriptions/$(subscriptionId)/resourceGroups/$(resourceGroup)/providers/Microsoft.ContainerRegistry/registries/$(containerRegistryNameStage)"}'
+
+steps:
+  - task: MavenAuthenticate@0
+    inputs:
+      artifactsFeeds: 'ikea'
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'pom.xml'
+      mavenOptions: '-Xmx3072m'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.11'
+      jdkArchitectureOption: 'x64'
+      publishJUnitResults: true
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      goals: 'package'
+
+  - task: CopyFiles@2
+    displayName: 'Copy files to staging folder'
+    inputs:
+      SourceFolder: '$(system.defaultworkingdirectory)'
+      Contents: '**/*.jar'
+      TargetFolder: '$(build.artifactstagingdirectory)'
+    condition: succeededOrFailed()
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: icomdev.pam-asset-type-service'
+    inputs:
+      PathtoPublish: '$(build.artifactstagingdirectory)'
+    condition: succeededOrFailed()
+  
+  # Build container image DEV
+  - task: Docker@0
+    displayName: 'Build an image'
+    inputs:
+      azureSubscription: 'sc-oneui-ikeaorderandcreate-nonprd'
+      dockerFile: '**/Dockerfile'
+      imageName: $(Build.Repository.Name):$(Build.BuildId)
+      action: 'Build an image'
+      azureContainerRegistry: $(containerConnectionDev)
+      includeLatestTag: true
+
+  # Push container image DEV
+  - task: Docker@0
+    displayName: 'Push an image'
+    inputs:
+      azureSubscription: 'sc-oneui-ikeaorderandcreate-nonprd'
+      imageName: $(Build.Repository.Name):$(Build.BuildId)
+      azureContainerRegistry: $(containerConnectionDev)
+      action: 'Push an image'
+      includeLatestTag: true
+
+  # Build container image TEST
+  - task: Docker@0
+    displayName: 'Build an image'
+    inputs:
+      azureSubscription: 'sc-oneui-ikeaorderandcreate-nonprd'
+      dockerFile: '**/Dockerfile'
+      imageName: $(Build.Repository.Name):$(Build.BuildId)
+      action: 'Build an image'
+      azureContainerRegistry: $(containerConnectionTest)
+      includeLatestTag: true
+
+  # Push container image TEST
+  - task: Docker@0
+    displayName: 'Push an image'
+    inputs:
+      azureSubscription: 'sc-oneui-ikeaorderandcreate-nonprd'
+      imageName: $(Build.Repository.Name):$(Build.BuildId)
+      azureContainerRegistry: $(containerConnectionTest)
+      action: 'Push an image'
+      includeLatestTag: true
+
+  # Build container image STAGE
+  - task: Docker@0
+    displayName: 'Build an image'
+    inputs:
+      azureSubscription: 'sc-oneui-ikeaorderandcreate-nonprd'
+      dockerFile: '**/Dockerfile'
+      imageName: $(Build.Repository.Name):$(Build.BuildId)
+      action: 'Build an image'
+      azureContainerRegistry: $(containerConnectionStage)
+      includeLatestTag: true
+
+  # Push container image STAGE
+  - task: Docker@0
+    displayName: 'Push an image'
+    inputs:
+      azureSubscription: 'sc-oneui-ikeaorderandcreate-nonprd'
+      imageName: $(Build.Repository.Name):$(Build.BuildId)
+      azureContainerRegistry: $(containerConnectionStage)
+      action: 'Push an image'
+      includeLatestTag: true

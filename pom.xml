@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<modules>
+		<module>Application</module>
+        <module>ComponentTest</module>
+    </modules>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.6.2</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<groupId>com.ikea.imc.pam</groupId>
+	<artifactId>pam-asset-type-service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Pam-Asset-Type-Service::Parent</name>
+	<description>Asset-Type Service</description>
+
+	<properties>
+		<java.version>11</java.version>
+		<log4j2.version>2.17.1</log4j2.version>
+		<maven-compiler.version>3.8.1</maven-compiler.version>
+		<spotless.version>2.20.0</spotless.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+	</properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.6.2</version>
+                <configuration>
+                    <classifier>exec</classifier>
+                    <mainClass>ikea.imc.pam.asset.type.service.StartSpringbootApi</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.theoryinpractise</groupId>
+                <artifactId>googleformatter-maven-plugin</artifactId>
+                <version>1.7.4</version>
+                <executions>
+                    <execution>
+                        <id>reformat-sources</id>
+                        <configuration>
+                            <includeStale>true</includeStale>
+                            <style>AOSP</style>
+                            <formatMain>true</formatMain>
+                            <formatTest>true</formatTest>
+                            <filterModified>false</filterModified>
+                            <skip>false</skip>
+                            <fixImports>true</fixImports>
+                            <maxLineLength>120</maxLineLength>
+                        </configuration>
+                        <goals>
+                            <goal>format</goal>
+                        </goals>
+                        <phase>process-sources</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>ikea</id>
+            <url>https://pkgs.dev.azure.com/orderandcreate/_packaging/ikea/maven/v1</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <!-- DEFINE COMMON DEPENDENCIES BETWEEN MODULES -->
+    <dependencies>
+        <dependency>
+            <groupId>com.ikea.imc.pam</groupId>
+            <artifactId>pam-asset-type-service-client</artifactId>
+            <version>1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.13.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>2.13.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>
