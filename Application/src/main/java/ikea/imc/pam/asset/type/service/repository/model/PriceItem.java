@@ -9,7 +9,11 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Builder(toBuilder = true)
+@NamedQuery(
+        name = "PriceItem.getPriceItemsByCostType",
+        query = "select p from PriceItem p where p.costType in :costTypes")
 public class PriceItem extends AbstractEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long priceItemId;
