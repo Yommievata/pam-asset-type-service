@@ -30,7 +30,15 @@ public class PriceItem extends AbstractEntity {
 
     private Double price;
     private Long pcoptDataMappingId;
-    private String businessModel;
+
+    @ManyToOne
+    @JoinColumn(name = "business_model_id")
+    private BusinessModel businessModel;
+
+    @ManyToOne
+    @JoinColumn(name = "business_area_id")
+    private BusinessArea businessArea;
+
     private Integer field3;
     private String imcResponsibleCc;
     private String area;

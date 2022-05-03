@@ -18,7 +18,8 @@
             <column name="new" value="true" />
             <column name="price" value="50000.00"/>
             <column name="pcopt_data_mapping_id" value="5" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="2"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Motion Media"/>
@@ -47,7 +48,8 @@
             <column name="new" value="true" />
             <column name="price" value="50000.00"/>
             <column name="pcopt_data_mapping_id" value="6" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="2"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Motion Media"/>
@@ -76,7 +78,8 @@
             <column name="new" value="true" />
             <column name="price" value="50000.00"/>
             <column name="pcopt_data_mapping_id" value="7" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="2"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Motion Media"/>
@@ -105,7 +108,8 @@
             <column name="new" value="false" />
             <column name="price" value="1550.00"/>
             <column name="pcopt_data_mapping_id" value="8" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="3"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communication"/>
@@ -134,7 +138,8 @@
             <column name="new" value="false" />
             <column name="price" value="1550.00"/>
             <column name="pcopt_data_mapping_id" value="9" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="3"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communication"/>
@@ -162,7 +167,8 @@
             <column name="new" value="true" />
             <column name="price" value="6000.00"/>
             <column name="pcopt_data_mapping_id" value="1" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="1"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Pictures"/>
@@ -190,7 +196,8 @@
             <column name="new" value="true" />
             <column name="price" value="6000.00"/>
             <column name="pcopt_data_mapping_id" value="2" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="1"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Pictures"/>
@@ -218,7 +225,8 @@
             <column name="new" value="true" />
             <column name="price" value="3470.00"/>
             <column name="pcopt_data_mapping_id" value="3" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="1"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Pictures"/>
@@ -247,7 +255,8 @@
             <column name="new" value="true" />
             <column name="price" value="53000.00"/>
             <column name="pcopt_data_mapping_id" value="4" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="1"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Pictures"/>
@@ -276,7 +285,8 @@
             <column name="new" value="false" />
             <column name="price" value="2000.00"/>
             <column name="pcopt_data_mapping_id" value="10" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="3"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communication"/>
@@ -305,7 +315,8 @@
             <column name="new" value="true" />
             <column name="price" value="4000.00"/>
             <column name="pcopt_data_mapping_id" value="11" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="3"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communication"/>
@@ -334,7 +345,8 @@
             <column name="new" value="true" />
             <column name="price" value="22960.00"/>
             <column name="pcopt_data_mapping_id" value="12" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="3"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communication"/>
@@ -363,7 +375,8 @@
             <column name="new" value="false" />
             <column name="price" value="6560.00"/>
             <column name="pcopt_data_mapping_id" value="13" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="3"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communication"/>
@@ -392,7 +405,8 @@
             <column name="new" value="true" />
             <column name="price" value="6560.00"/>
             <column name="pcopt_data_mapping_id" value="14" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="3"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communication"/>
@@ -421,7 +435,8 @@
             <column name="new" value="true" />
             <column name="price" value="6560.00"/>
             <column name="pcopt_data_mapping_id" value="15" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="3"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communication"/>
@@ -450,7 +465,8 @@
             <column name="new" value="true" />
             <column name="price" value="6560.00"/>
             <column name="pcopt_data_mapping_id" value="16" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="3"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communication"/>
@@ -479,7 +495,8 @@
             <column name="new" value="false" />
             <column name="price" value="4920.00"/>
             <column name="pcopt_data_mapping_id" value="17" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="3"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communication"/>
@@ -508,7 +525,8 @@
             <column name="new" value="true" />
             <column name="price" value="1230.00"/>
             <column name="pcopt_data_mapping_id" value="18" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="4"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Symbols &amp; Illustrations"/>
@@ -537,7 +555,8 @@
             <column name="new" value="true" />
             <column name="price" value="6300.00"/>
             <column name="pcopt_data_mapping_id" value="19" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="4"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Symbols &amp; Illustrations"/>
@@ -566,7 +585,8 @@
             <column name="new" value="true" />
             <column name="price" value="875.00"/>
             <column name="pcopt_data_mapping_id" value="20" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="5"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="Text"/>
             <column name="area" value="Product Texts"/>
@@ -595,7 +615,8 @@
             <column name="new" value="true" />
             <column name="price" value="875.00"/>
             <column name="pcopt_data_mapping_id" value="21" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="5"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="Text"/>
             <column name="area" value="Product Texts"/>
@@ -624,7 +645,8 @@
             <column name="new" value="true" />
             <column name="price" value="889.00"/>
             <column name="pcopt_data_mapping_id" value="22" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="5"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="Text"/>
             <column name="area" value="Product Texts"/>
@@ -653,7 +675,8 @@
             <column name="new" value="true" />
             <column name="price" value="7050.00"/>
             <column name="pcopt_data_mapping_id" value="23" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="6"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7637"/>
             <column name="area" value="3D Models"/>
@@ -682,7 +705,8 @@
             <column name="new" value="true" />
             <column name="price" value="20550.00"/>
             <column name="pcopt_data_mapping_id" value="24" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="6"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7637"/>
             <column name="area" value="3D Models"/>
@@ -711,7 +735,8 @@
             <column name="new" value="true" />
             <column name="price" value="3380.00"/>
             <column name="pcopt_data_mapping_id" value="25" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="6"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7637"/>
             <column name="area" value="3D Models"/>
@@ -740,7 +765,8 @@
             <column name="new" value="true" />
             <column name="price" value="19110.00"/>
             <column name="pcopt_data_mapping_id" value="26" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="6"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7637"/>
             <column name="area" value="3D Models"/>
@@ -769,7 +795,8 @@
             <column name="new" value="true" />
             <column name="price" value="7050.00"/>
             <column name="pcopt_data_mapping_id" value="27" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="6"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7637"/>
             <column name="area" value="3D Models"/>
@@ -798,7 +825,8 @@
             <column name="new" value="true" />
             <column name="price" value="20550.00"/>
             <column name="pcopt_data_mapping_id" value="28" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="6"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7637"/>
             <column name="area" value="3D Models"/>
@@ -827,7 +855,8 @@
             <column name="new" value="true" />
             <column name="price" value="3380.00"/>
             <column name="pcopt_data_mapping_id" value="29" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="6"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7637"/>
             <column name="area" value="3D Models"/>
@@ -856,7 +885,8 @@
             <column name="new" value="true" />
             <column name="price" value="19110.00"/>
             <column name="pcopt_data_mapping_id" value="30" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="6"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7637"/>
             <column name="area" value="3D Models"/>
@@ -885,7 +915,8 @@
             <column name="new" value="false" />
             <column name="price" value="320.00"/>
             <column name="pcopt_data_mapping_id" value="31" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="6"/>
             <column name="field3" value="1"/>
             <column name="imc_responsible_cc" value="IMC-CC7637"/>
             <column name="area" value="3D Models"/>
@@ -914,7 +945,8 @@
             <column name="new" value="true" />
             <column name="price" value="3070.00"/>
             <column name="pcopt_data_mapping_id" value="32" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="7"/>
             <column name="field3" value="2"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Pictures"/>
@@ -943,7 +975,8 @@
             <column name="new" value="true" />
             <column name="price" value="6900.00"/>
             <column name="pcopt_data_mapping_id" value="33" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="8"/>
             <column name="field3" value="2"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communiccation"/>
@@ -972,7 +1005,8 @@
             <column name="new" value="false" />
             <column name="price" value="1750.00"/>
             <column name="pcopt_data_mapping_id" value="34" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="8"/>
             <column name="field3" value="2"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communiccation"/>
@@ -1001,7 +1035,8 @@
             <column name="new" value="true" />
             <column name="price" value="1550.00"/>
             <column name="pcopt_data_mapping_id" value="35" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="8"/>
             <column name="field3" value="2"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communiccation"/>
@@ -1030,7 +1065,8 @@
             <column name="new" value="true" />
             <column name="price" value="7650.00"/>
             <column name="pcopt_data_mapping_id" value="36" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="9"/>
             <column name="field3" value="3"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="In package Communication"/>
@@ -1059,7 +1095,8 @@
             <column name="new" value="true" />
             <column name="price" value="16350.00"/>
             <column name="pcopt_data_mapping_id" value="37" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="9"/>
             <column name="field3" value="3"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="In package Communication"/>
@@ -1088,7 +1125,8 @@
             <column name="new" value="true" />
             <column name="price" value="24000.00"/>
             <column name="pcopt_data_mapping_id" value="38" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="9"/>
             <column name="field3" value="3"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="In package Communication"/>
@@ -1117,7 +1155,8 @@
             <column name="new" value="true" />
             <column name="price" value="43650.00"/>
             <column name="pcopt_data_mapping_id" value="39" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="9"/>
             <column name="field3" value="3"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="In package Communication"/>
@@ -1146,7 +1185,8 @@
             <column name="new" value="false" />
             <column name="price" value="820.00"/>
             <column name="pcopt_data_mapping_id" value="40" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="9"/>
             <column name="field3" value="3"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="In package Communication"/>
@@ -1175,7 +1215,8 @@
             <column name="new" value="true" />
             <column name="price" value="820.00"/>
             <column name="pcopt_data_mapping_id" value="41" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="9"/>
             <column name="field3" value="3"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="In package Communication"/>
@@ -1204,7 +1245,8 @@
             <column name="new" value="true" />
             <column name="price" value="820.00"/>
             <column name="pcopt_data_mapping_id" value="42" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="9"/>
             <column name="field3" value="3"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="In package Communication"/>
@@ -1233,7 +1275,8 @@
             <column name="new" value="true" />
             <column name="price" value="750.00"/>
             <column name="pcopt_data_mapping_id" value="43" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="10"/>
             <column name="field3" value="2"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="On package Communication"/>
@@ -1262,7 +1305,8 @@
             <column name="new" value="true" />
             <column name="price" value="900.00"/>
             <column name="pcopt_data_mapping_id" value="44" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="10"/>
             <column name="field3" value="2"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="On package Communication"/>
@@ -1291,7 +1335,8 @@
             <column name="new" value="true" />
             <column name="price" value="8000.00"/>
             <column name="pcopt_data_mapping_id" value="45" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="10"/>
             <column name="field3" value="3"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="On package Communication"/>
@@ -1320,7 +1365,8 @@
             <column name="new" value="true" />
             <column name="price" value="1850.00"/>
             <column name="pcopt_data_mapping_id" value="46" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="10"/>
             <column name="field3" value="2"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="On package Communication"/>
@@ -1349,7 +1395,8 @@
             <column name="new" value="true" />
             <column name="price" value="3600.00"/>
             <column name="pcopt_data_mapping_id" value="47" />
-            <column name="business_model" value="Product related content"/>
+            <column name="business_model_id" value="2"/>
+            <column name="business_area_id" value="10"/>
             <column name="field3" value="2"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="On package Communication"/>
@@ -1378,7 +1425,8 @@
             <column name="new" value="true" />
             <column name="price" value="175.00"/>
             <column name="pcopt_data_mapping_id" value="48" />
-            <column name="business_model" value="Other services"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="2"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="External check-in"/>
@@ -1407,7 +1455,8 @@
             <column name="new" value="true" />
             <column name="price" value="400.00"/>
             <column name="pcopt_data_mapping_id" value="49" />
-            <column name="business_model" value="Other services"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="3"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="External check-in"/>
@@ -1435,7 +1484,8 @@
             <column name="new" value="true" />
             <column name="price" value="350.00"/>
             <column name="pcopt_data_mapping_id" value="50" />
-            <column name="business_model" value="Other services"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="2"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="External check-in"/>
@@ -1463,7 +1513,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="51" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Pictures"/>
@@ -1490,7 +1541,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="52" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Pictures"/>
@@ -1517,7 +1569,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="53" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Pictures"/>
@@ -1544,7 +1597,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="54" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Pictures"/>
@@ -1571,7 +1625,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="55" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Pictures"/>
@@ -1598,7 +1653,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="56" />
-            <column name="business_model" value="Product Related Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Pictures"/>
@@ -1625,7 +1681,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="57" />
-            <column name="business_model" value="Other services"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product Pictures"/>
@@ -1652,7 +1709,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="58" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product films &amp; Stop motion"/>
@@ -1679,7 +1737,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="59" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product films &amp; Stop motion"/>
@@ -1706,7 +1765,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="60" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product films &amp; Stop motion"/>
@@ -1733,7 +1793,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="61" />
-            <column name="business_model" value="Other services"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7645"/>
             <column name="area" value="Product films &amp; Stop motion"/>
@@ -1760,7 +1821,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="62" />
-            <column name="business_model" value="Other services"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="RangeCom"/>
             <column name="area" value="Other Communication Services"/>
@@ -1787,7 +1849,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="63" />
-            <column name="business_model" value="Other services"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="RangeCom"/>
             <column name="area" value="Range Communication"/>
@@ -1814,7 +1877,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="64" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="RangeCom"/>
             <column name="area" value="Range Communication"/>
@@ -1841,7 +1905,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="65" />
-            <column name="business_model" value="Other services"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="RangeCom"/>
             <column name="area" value="Range Communication"/>
@@ -1868,7 +1933,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="66" />
-            <column name="business_model" value="Other services"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="RangeCom"/>
             <column name="area" value="Range Communication"/>
@@ -1895,7 +1961,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="67" />
-            <column name="business_model" value="Other services"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="RangeCom"/>
             <column name="area" value="Range Communication"/>
@@ -1922,7 +1989,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="68" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communiccation"/>
@@ -1949,7 +2017,8 @@
             <column name="template" value="false" />
             <column name="new" value="false" />
             <column name="pcopt_data_mapping_id" value="69" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communiccation"/>
@@ -1976,7 +2045,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="70" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communiccation"/>
@@ -2003,7 +2073,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="71" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communiccation"/>
@@ -2030,7 +2101,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="72" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communiccation"/>
@@ -2057,7 +2129,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="73" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Store Communiccation"/>
@@ -2084,7 +2157,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="74" />
-            <column name="business_model" value="Other services"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Symbols &amp; Illustrations"/>
@@ -2111,7 +2185,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="75" />
-            <column name="business_model" value="Product Related Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="Package Communication"/>
@@ -2138,7 +2213,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="76" />
-            <column name="business_model" value="Product Related Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="IMC-CC7636"/>
             <column name="area" value="In package Communication"/>
@@ -2166,7 +2242,8 @@
             <column name="new" value="true" />
             <column name="price" value="77"/>
             <column name="pcopt_data_mapping_id" value="77" />
-            <column name="business_model" value="Common Content"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="Text"/>
             <column name="area" value="Text"/>
@@ -2193,7 +2270,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="78" />
-            <column name="business_model" value="Other services"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="N/A"/>
             <column name="area" value="Other Communication Services"/>
@@ -2220,7 +2298,8 @@
             <column name="template" value="false" />
             <column name="new" value="true" />
             <column name="pcopt_data_mapping_id" value="79" />
-            <column name="business_model" value="Other services"/>
+            <column name="business_model_id" value="3"/>
+            <column name="business_area_id" value="11"/>
             <column name="field3" value="4"/>
             <column name="imc_responsible_cc" value="RangeCom"/>
             <column name="area" value="Other Communication Services"/>

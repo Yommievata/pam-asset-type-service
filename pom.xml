@@ -84,7 +84,7 @@
         <dependency>
             <groupId>com.ikea.imc.pam</groupId>
             <artifactId>pam-asset-type-service-client</artifactId>
-            <version>4</version>
+            <version>6</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>

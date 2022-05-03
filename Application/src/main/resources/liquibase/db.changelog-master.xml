@@ -7,6 +7,6 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd">
 
     <!-- INCLUDES -->
     <include file="liquibase/changelog/model-base.xml"/>
+    <include file="liquibase/changelog/business-model-and-area.xml"/>
     <include file="liquibase/changelog/price-item-excel-import.xml"/>
-
 </databaseChangeLog>

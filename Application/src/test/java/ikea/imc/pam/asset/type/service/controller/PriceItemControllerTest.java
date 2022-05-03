@@ -7,6 +7,8 @@ import static org.mockito.Mockito.when;
 
 import ikea.imc.pam.asset.type.service.client.dto.CostType;
 import ikea.imc.pam.asset.type.service.client.dto.PriceItemDTO;
+import ikea.imc.pam.asset.type.service.repository.model.BusinessArea;
+import ikea.imc.pam.asset.type.service.repository.model.BusinessModel;
 import ikea.imc.pam.asset.type.service.repository.model.PriceItem;
 import ikea.imc.pam.asset.type.service.service.PriceItemService;
 import java.util.Collections;
@@ -35,7 +37,6 @@ public class PriceItemControllerTest {
     private static final boolean PRICE_ITEM_IS_NEW = false;
     private static final Double PRICE_ITEM_PRICE = 20.0;
     private static final Long PRICE_ITEM_PCOPT_DATA_MAPPING_ID = 10L;
-    private static final String PRICE_ITEM_BUSINESS_MODEL = "business model";
     private static final Integer PRICE_ITEM_FIELD_3 = 3;
     private static final String PRICE_ITEM_IMC_RESPONSIBLE_CC = "imc responsible cc";
     private static final String PRICE_ITEM_AREA = "area";
@@ -52,6 +53,13 @@ public class PriceItemControllerTest {
     private static final String PRICE_ITEM_ORDER_SYSTEM = "order system";
     private static final String PRICE_ITEM_CONTENT = "content";
     private static final Integer PRICE_ITEM_WEEKS = 10;
+
+    private static final Long BUSINESS_MODEL_ID = 123L;
+    private static final String BUSINESS_MODEL_NAME = "business model";
+    private static final Integer BUSINESS_MODEL_SORT_ORDER = 1;
+    private static final Long BUSINESS_AREA_ID = 1234L;
+    private static final String BUSINESS_AREA_NAME = "business area";
+    private static final Integer BUSINESS_AREA_SORT_ORDER = 10;
 
     @Mock PriceItemService priceItemService;
 
@@ -83,12 +91,14 @@ public class PriceItemControllerTest {
             PriceItemDTO dto1 = priceItems.get(0);
             assertEquals(PRICE_ITEM_ID_1, dto1.getId());
             assertEquals(PRICE_ITEM_ID_2, priceItems.get(1).getId());
+            assertEquals(BUSINESS_MODEL_NAME, dto1.getBusinessModel());
+            assertEquals(BUSINESS_MODEL_SORT_ORDER, dto1.getBusinessModelSortOrder());
+            assertEquals(BUSINESS_AREA_NAME, dto1.getBusinessArea());
+            assertEquals(BUSINESS_AREA_SORT_ORDER, dto1.getBusinessAreaSortOrder());
             assertEquals(PRICE_ITEM_NAME, dto1.getCommunication());
             assertEquals(PRICE_ITEM_WEEKS, dto1.getWeeks());
             assertEquals(PRICE_ITEM_PRICE, dto1.getCostPerUnit());
             assertEquals(PRICE_ITEM_COST_TYPE, dto1.getCostType());
-            assertEquals(PRICE_ITEM_CONTENT_AREA, dto1.getContentArea());
-            assertEquals(PRICE_ITEM_CONTENT_TYPE, dto1.getContentType());
         }
 
         @Test
@@ -156,7 +166,8 @@ public class PriceItemControllerTest {
                 .isNew(PRICE_ITEM_IS_NEW)
                 .price(PRICE_ITEM_PRICE)
                 .pcoptDataMappingId(PRICE_ITEM_PCOPT_DATA_MAPPING_ID)
-                .businessModel(PRICE_ITEM_BUSINESS_MODEL)
+                .businessModel(generateBusinessModel())
+                .businessArea(generateBusinessArea())
                 .field3(PRICE_ITEM_FIELD_3)
                 .imcResponsibleCc(PRICE_ITEM_IMC_RESPONSIBLE_CC)
                 .area(PRICE_ITEM_AREA)
@@ -173,6 +184,22 @@ public class PriceItemControllerTest {
                 .orderSystem(PRICE_ITEM_ORDER_SYSTEM)
                 .content(PRICE_ITEM_CONTENT)
                 .weeks(PRICE_ITEM_WEEKS)
+                .build();
+    }
+
+    private BusinessModel generateBusinessModel() {
+        return BusinessModel.builder()
+                .businessModelId(BUSINESS_MODEL_ID)
+                .name(BUSINESS_MODEL_NAME)
+                .sortOrder(BUSINESS_MODEL_SORT_ORDER)
+                .build();
+    }
+
+    private BusinessArea generateBusinessArea() {
+        return BusinessArea.builder()
+                .businessAreaId(BUSINESS_AREA_ID)
+                .name(BUSINESS_AREA_NAME)
+                .sortOrder(BUSINESS_AREA_SORT_ORDER)
                 .build();
     }
 }
