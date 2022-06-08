@@ -8,7 +8,6 @@
 
     <changeSet id="1648709974522-1" author="carl-henrik-laulaja (generated)">
         <sql>SET IDENTITY_INSERT business_model ON</sql>
-        <sql>SET IDENTITY_INSERT business_area ON</sql>
         <insert tableName="business_model">
             <column name="business_model_id" value="1" />
             <column name="name" value="Common Content" />
@@ -24,7 +23,8 @@
             <column name="name" value="Other Services" />
             <column name="sort_order" value="3" />
         </insert>
-
+        <sql>SET IDENTITY_INSERT business_model OFF</sql>
+        <sql>SET IDENTITY_INSERT business_area ON</sql>
         <insert tableName="business_area">
             <column name="business_area_id" value="1" />
             <column name="name" value="Product Pictures" />
@@ -82,7 +82,6 @@
             <column name="name" value="All other" />
             <column name="sort_order" value="11" />
         </insert>
-        <sql>SET IDENTITY_INSERT business_model OFF</sql>
         <sql>SET IDENTITY_INSERT business_area OFF</sql>
     </changeSet>
 
