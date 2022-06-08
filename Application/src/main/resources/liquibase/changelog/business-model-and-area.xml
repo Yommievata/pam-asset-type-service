@@ -7,6 +7,8 @@
         objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
 
     <changeSet id="1648709974522-1" author="carl-henrik-laulaja (generated)">
+        <executeCommand executable="SET IDENTITY_INSERT business_model ON" />
+        <executeCommand executable="SET IDENTITY_INSERT business_area ON" />
         <insert tableName="business_model">
             <column name="business_model_id" value="1" />
             <column name="name" value="Common Content" />
@@ -80,6 +82,8 @@
             <column name="name" value="All other" />
             <column name="sort_order" value="11" />
         </insert>
+        <executeCommand executable="SET IDENTITY_INSERT business_model OFF" />
+        <executeCommand executable="SET IDENTITY_INSERT business_area OFF" />
     </changeSet>
 
 </databaseChangeLog>
