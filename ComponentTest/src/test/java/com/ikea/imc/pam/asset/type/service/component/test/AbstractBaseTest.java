@@ -25,22 +25,22 @@ public abstract class AbstractBaseTest {
 
     protected TestData testData;
 
-    @Value("${ikea.imc.pam.network.port}")
+    @Value("${com.ikea.imc.pam.network.port}")
     private int assetTypeServicePort;
 
-    @Value("${ikea.imc.pam.asset.type.service.docker.file.location}")
+    @Value("${com.ikea.imc.pam.asset.type.service.docker.file.location}")
     private String dockerFileLocation;
 
-    @Value("${ikea.imc.pam.asset.type.service.docker.container.name}")
+    @Value("${com.ikea.imc.pam.asset.type.service.docker.container.name}")
     private String assetTypeServiceContainerName;
 
-    @Value("${ikea.imc.pam.asset.type.service.docker.standalone:false}")
+    @Value("${com.ikea.imc.pam.asset.type.service.docker.standalone:false}")
     private boolean dockerStandalone;
 
-    @Value("${ikea.imc.pam.asset.type.service.wiremock.host}")
+    @Value("${com.ikea.imc.pam.asset.type.service.wiremock.host}")
     private String wiremockHost;
 
-    @Value("${ikea.imc.pam.asset.type.service.wiremock.port}")
+    @Value("${com.ikea.imc.pam.asset.type.service.wiremock.port}")
     private int wiremockPort;
 
     private static DockerComposeContainer container;

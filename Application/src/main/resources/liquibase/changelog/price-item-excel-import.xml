@@ -7,7 +7,7 @@
         objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
 
     <changeSet id="1648709974523-1" author="carl-henrik-laulaja (generated)">
-        <sql>SET IDENTITY_INSERT price_item ON</sql>
+        <sql dbms="!h2">SET IDENTITY_INSERT price_item ON</sql>
         <insert tableName="price_item">
             <column name="price_item_id" value="1"/>
             <column name="price_item_name" value="Product Assembly Principle Film (PAF)" />
@@ -2317,7 +2317,7 @@
             <column name="order_system" value=""/>
             <column name="content" value="Development Center Cost"/>
         </insert>
-        <sql>SET IDENTITY_INSERT price_item OFF</sql>
+        <sql dbms="!h2">SET IDENTITY_INSERT price_item OFF</sql>
     </changeSet>
 
 </databaseChangeLog>
