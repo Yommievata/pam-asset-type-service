@@ -3,6 +3,8 @@ package com.ikea.imc.pam.asset.type.service.component.test;
 import com.github.tomakehurst.wiremock.client.WireMock;
 import java.io.File;
 import javax.annotation.PostConstruct;
+
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,13 +18,13 @@ import org.springframework.security.oauth2.client.OAuth2AuthorizedClient;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClientManager;
 import org.springframework.test.context.ContextConfiguration;
 import org.testcontainers.containers.DockerComposeContainer;
+import org.testcontainers.containers.output.Slf4jLogConsumer;
 import org.testcontainers.containers.wait.strategy.Wait;
 
+@Slf4j
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
 @ContextConfiguration(classes = AbstractBaseTest.TestConfig.class)
 public abstract class AbstractBaseTest {
-    private static final Logger log = LoggerFactory.getLogger(AbstractBaseTest.class);
-
     protected TestData testData;
 
     @Value("${com.ikea.imc.pam.network.port}")
@@ -75,8 +77,8 @@ public abstract class AbstractBaseTest {
             container =
                     new DockerComposeContainer(new File(dockerFileLocation))
                             .withRemoveImages(DockerComposeContainer.RemoveImages.ALL)
-                            .withExposedService(
-                                    assetTypeServiceContainerName, assetTypeServicePort, Wait.forHealthcheck());
+                            .withExposedService(assetTypeServiceContainerName, assetTypeServicePort, Wait.forHealthcheck())
+                            .withLogConsumer(assetTypeServiceContainerName, new Slf4jLogConsumer(log));
             container.start();
         }
         testData = new TestData();
