@@ -11,12 +11,12 @@ services:
         privileged: true
         restart: unless-stopped
         ports:
-            - "23154:23154" # Default application port
+            - "23151:23151" # Default application port
             - "5006:5006" # Debug port
         extra_hosts:
             - "host.docker.internal:host-gateway"
         healthcheck:
-            test: "curl --fail --silent localhost:23154/actuator/health | grep UP || exit 1"
+            test: "curl --fail --silent localhost:23151/actuator/health | grep UP || exit 1"
             interval: 30s
             timeout: 5s
             retries: 10
