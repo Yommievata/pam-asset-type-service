@@ -10,20 +10,20 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-- name: subscriptionId
-  value: 'd4e56fca-114c-4a87-b670-1f039b63445c'
-- name: resourceGroup
-  value: 'PAM.Common'
-- name: containerRegistryName
-  value: crpamprod
-- name: containerConnection
-  value: '{"loginServer":"$(containerRegistryName).azurecr.io", "id" : "/subscriptions/$(subscriptionId)/resourceGroups/$(resourceGroup)/providers/Microsoft.ContainerRegistry/registries/$(containerRegistryName)"}'
+  - name: subscriptionId
+    value: 'd4e56fca-114c-4a87-b670-1f039b63445c'
+  - name: resourceGroup
+    value: 'PAM.Common'
+  - name: containerRegistryName
+    value: crpamprod
+  - name: containerConnection
+    value: '{"loginServer":"$(containerRegistryName).azurecr.io", "id" : "/subscriptions/$(subscriptionId)/resourceGroups/$(resourceGroup)/providers/Microsoft.ContainerRegistry/registries/$(containerRegistryName)"}'
 
 steps:
   - task: MavenAuthenticate@0
     inputs:
       artifactsFeeds: 'ikea'
-
+  
   - task: Maven@3
     inputs:
       mavenPomFile: 'pom.xml'
@@ -34,7 +34,7 @@ steps:
       publishJUnitResults: true
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       goals: 'package'
-
+  
   - task: CopyFiles@2
     displayName: 'Copy files to staging folder'
     inputs:
@@ -42,13 +42,13 @@ steps:
       Contents: '**/*.jar'
       TargetFolder: '$(build.artifactstagingdirectory)'
     condition: succeededOrFailed()
-
+  
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: icomdev.pam-asset-type-service'
     inputs:
       PathtoPublish: '$(build.artifactstagingdirectory)'
     condition: succeededOrFailed()
-
+  
   # Build container image PROD
   - task: Docker@0
     displayName: 'Build an image for production'
@@ -59,7 +59,7 @@ steps:
       action: 'Build an image'
       azureContainerRegistry: $(containerConnection)
       includeLatestTag: true
-
+  
   # Push container image PROD
   - task: Docker@0
     displayName: 'Push an image to production'

@@ -5,35 +5,35 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd"
         objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
-    <changeSet id="1655475593456-1" author="carl-henrik-laulaja (generated)">
-        <update tableName="price_item">
-            <column name="price_item_name" value="Product Usage Film/Stop-Motion (PUF)"/>
-            <column name="service_type_name" value="Product Usage Film/Stop-Motion (PUF)"/>
-            <column name="imc_sub_assignment" value="Product Usage Film/Stop-Motion (PUF)"/>
-            <column name="content" value="Product Usage Film/Stop-Motion (PUF)"/>
-            <where>price_item_id=2</where>
-        </update>
-        <update tableName="price_item">
-            <column name="price_item_name" value="Cut-through product picture"/>
-            <column name="service_type_name" value="Cut-through product picture"/>
-            <column name="imc_sub_assignment" value="Cut-through product picture"/>
-            <column name="content" value="Cut-through product picture"/>
-            <column name="business_model_id" value="1"/>
-            <where>price_item_id=51</where>
-        </update>
-        <update tableName="price_item">
-            <column name="price_item_name" value="Comfort Product Picture"/>
-            <column name="service_type_name" value="Comfort Product Picture"/>
-            <column name="imc_sub_assignment" value="Comfort Product Picture"/>
-            <column name="content" value="Comfort Product Picture"/>
-            <where>price_item_id=52</where>
-        </update>
-        <update tableName="price_item">
-            <column name="price_item_name" value="Product Feature Film/Stop-Motion media (PFF)"/>
-            <column name="service_type_name" value="Product Feature Film/Stop-Motion media (PFF)"/>
-            <column name="imc_sub_assignment" value="Product Feature Film/Stop-Motion media (PFF)"/>
-            <column name="content" value="Product Feature Film/Stop-Motion media (PFF)"/>
-            <where>price_item_id=98</where>
-        </update>
-    </changeSet>
+  <changeSet id="1655475593456-1" author="carl-henrik-laulaja (generated)">
+    <update tableName="price_item">
+      <column name="price_item_name" value="Product Usage Film/Stop-Motion (PUF)"/>
+      <column name="service_type_name" value="Product Usage Film/Stop-Motion (PUF)"/>
+      <column name="imc_sub_assignment" value="Product Usage Film/Stop-Motion (PUF)"/>
+      <column name="content" value="Product Usage Film/Stop-Motion (PUF)"/>
+      <where>price_item_id=2</where>
+    </update>
+    <update tableName="price_item">
+      <column name="price_item_name" value="Cut-through product picture"/>
+      <column name="service_type_name" value="Cut-through product picture"/>
+      <column name="imc_sub_assignment" value="Cut-through product picture"/>
+      <column name="content" value="Cut-through product picture"/>
+      <column name="business_model_id" value="1"/>
+      <where>price_item_id=51</where>
+    </update>
+    <update tableName="price_item">
+      <column name="price_item_name" value="Comfort Product Picture"/>
+      <column name="service_type_name" value="Comfort Product Picture"/>
+      <column name="imc_sub_assignment" value="Comfort Product Picture"/>
+      <column name="content" value="Comfort Product Picture"/>
+      <where>price_item_id=52</where>
+    </update>
+    <update tableName="price_item">
+      <column name="price_item_name" value="Product Feature Film/Stop-Motion media (PFF)"/>
+      <column name="service_type_name" value="Product Feature Film/Stop-Motion media (PFF)"/>
+      <column name="imc_sub_assignment" value="Product Feature Film/Stop-Motion media (PFF)"/>
+      <column name="content" value="Product Feature Film/Stop-Motion media (PFF)"/>
+      <where>price_item_id=98</where>
+    </update>
+  </changeSet>
 </databaseChangeLog>

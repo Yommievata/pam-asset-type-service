@@ -6,83 +6,87 @@
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd"
         objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
 
-    <changeSet id="1648709974522-1" author="carl-henrik-laulaja (generated)">
-        <sql dbms="!h2">SET IDENTITY_INSERT business_model ON</sql>
-        <insert tableName="business_model">
-            <column name="business_model_id" value="1" />
-            <column name="name" value="Common Content" />
-            <column name="sort_order" value="1" />
-        </insert>
-        <insert tableName="business_model">
-            <column name="business_model_id" value="2" />
-            <column name="name" value="Product Related Content" />
-            <column name="sort_order" value="2" />
-        </insert>
-        <insert tableName="business_model">
-            <column name="business_model_id" value="3" />
-            <column name="name" value="Other Services" />
-            <column name="sort_order" value="3" />
-        </insert>
-        <sql dbms="!h2">SET IDENTITY_INSERT business_model OFF</sql>
-        <sql dbms="!h2">SET IDENTITY_INSERT business_area ON</sql>
-        <insert tableName="business_area">
-            <column name="business_area_id" value="1" />
-            <column name="name" value="Product Pictures" />
-            <column name="sort_order" value="1" />
-        </insert>
-        <insert tableName="business_area">
-            <column name="business_area_id" value="2" />
-            <column name="name" value="Product motion media" />
-            <column name="sort_order" value="2" />
-        </insert>
-        <insert tableName="business_area">
-            <column name="business_area_id" value="3" />
-            <column name="name" value="Store Communication" />
-            <column name="sort_order" value="3" />
-        </insert>
-        <insert tableName="business_area">
-            <column name="business_area_id" value="4" />
-            <column name="name" value="Symbols &amp; Illustrations" />
-            <column name="sort_order" value="4" />
-        </insert>
-        <insert tableName="business_area">
-            <column name="business_area_id" value="5" />
-            <column name="name" value="Product Texts" />
-            <column name="sort_order" value="5" />
-        </insert>
-        <insert tableName="business_area">
-            <column name="business_area_id" value="6" />
-            <column name="name" value="3D Models" />
-            <column name="sort_order" value="6" />
-        </insert>
+  <changeSet id="1648709974522-1" author="carl-henrik-laulaja (generated)">
+    <sql dbms="!h2">SET
+    IDENTITY_INSERT business_model ON</sql>
+    <insert tableName="business_model">
+      <column name="business_model_id" value="1"/>
+      <column name="name" value="Common Content"/>
+      <column name="sort_order" value="1"/>
+    </insert>
+    <insert tableName="business_model">
+      <column name="business_model_id" value="2"/>
+      <column name="name" value="Product Related Content"/>
+      <column name="sort_order" value="2"/>
+    </insert>
+    <insert tableName="business_model">
+      <column name="business_model_id" value="3"/>
+      <column name="name" value="Other Services"/>
+      <column name="sort_order" value="3"/>
+    </insert>
+    <sql dbms="!h2">SET
+    IDENTITY_INSERT business_model OFF</sql>
+    <sql dbms="!h2">SET
+    IDENTITY_INSERT business_area ON</sql>
+    <insert tableName="business_area">
+      <column name="business_area_id" value="1"/>
+      <column name="name" value="Product Pictures"/>
+      <column name="sort_order" value="1"/>
+    </insert>
+    <insert tableName="business_area">
+      <column name="business_area_id" value="2"/>
+      <column name="name" value="Product motion media"/>
+      <column name="sort_order" value="2"/>
+    </insert>
+    <insert tableName="business_area">
+      <column name="business_area_id" value="3"/>
+      <column name="name" value="Store Communication"/>
+      <column name="sort_order" value="3"/>
+    </insert>
+    <insert tableName="business_area">
+      <column name="business_area_id" value="4"/>
+      <column name="name" value="Symbols &amp; Illustrations"/>
+      <column name="sort_order" value="4"/>
+    </insert>
+    <insert tableName="business_area">
+      <column name="business_area_id" value="5"/>
+      <column name="name" value="Product Texts"/>
+      <column name="sort_order" value="5"/>
+    </insert>
+    <insert tableName="business_area">
+      <column name="business_area_id" value="6"/>
+      <column name="name" value="3D Models"/>
+      <column name="sort_order" value="6"/>
+    </insert>
 
-        <insert tableName="business_area">
-            <column name="business_area_id" value="7" />
-            <column name="name" value="Product Pictures" />
-            <column name="sort_order" value="7" />
-        </insert>
-        <insert tableName="business_area">
-            <column name="business_area_id" value="8" />
-            <column name="name" value="Store Communication" />
-            <column name="sort_order" value="8" />
-        </insert>
-        <insert tableName="business_area">
-            <column name="business_area_id" value="9" />
-            <column name="name" value="In package Communication" />
-            <column name="sort_order" value="9" />
-        </insert>
-        <insert tableName="business_area">
-            <column name="business_area_id" value="10" />
-            <column name="name" value="On package Communication" />
-            <column name="sort_order" value="10" />
-        </insert>
+    <insert tableName="business_area">
+      <column name="business_area_id" value="7"/>
+      <column name="name" value="Product Pictures"/>
+      <column name="sort_order" value="7"/>
+    </insert>
+    <insert tableName="business_area">
+      <column name="business_area_id" value="8"/>
+      <column name="name" value="Store Communication"/>
+      <column name="sort_order" value="8"/>
+    </insert>
+    <insert tableName="business_area">
+      <column name="business_area_id" value="9"/>
+      <column name="name" value="In package Communication"/>
+      <column name="sort_order" value="9"/>
+    </insert>
+    <insert tableName="business_area">
+      <column name="business_area_id" value="10"/>
+      <column name="name" value="On package Communication"/>
+      <column name="sort_order" value="10"/>
+    </insert>
 
-        <insert tableName="business_area">
-            <column name="business_area_id" value="11" />
-            <column name="name" value="All other" />
-            <column name="sort_order" value="11" />
-        </insert>
-        <sql dbms="!h2">SET IDENTITY_INSERT business_area OFF</sql>
-    </changeSet>
+    <insert tableName="business_area">
+      <column name="business_area_id" value="11"/>
+      <column name="name" value="All other"/>
+      <column name="sort_order" value="11"/>
+    </insert>
+    <sql dbms="!h2">SET
+    IDENTITY_INSERT business_area OFF</sql>
+  </changeSet>
 
 </databaseChangeLog>

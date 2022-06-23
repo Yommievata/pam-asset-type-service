@@ -6,67 +6,67 @@
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd"
         objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
 
-    <changeSet id="1648651778161-1" author="carl-henrik-laulaja (generated)">
-        <createTable tableName="price_item">
-            <column name="price_item_id" type="BIGINT" autoIncrement="true">
-                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_price_item"/>
-            </column>
-            <column name="price_item_name" type="VARCHAR(255)" />
-            <column name="asset_type_name" type="VARCHAR(255)" />
-            <column name="asset_format_name" type="VARCHAR(255)" />
-            <column name="content_type_name" type="VARCHAR(255)" />
-            <column name="service_type_name" type="VARCHAR(255)" />
-            <column name="template" type="BOOLEAN" />
-            <column name="new" type="BOOLEAN" />
-            <column name="price" type="DOUBLE"/>
-            <column name="pcopt_data_mapping_id" type="BIGINT" />
-            <column name="business_model_id" type="BIGINT"/>
-            <column name="business_area_id" type="BIGINT"/>
-            <column name="field3" type="INT"/>
-            <column name="imc_responsible_cc" type="VARCHAR(255)"/>
-            <column name="area" type="VARCHAR(255)"/>
-            <column name="imc_assignment_area" type="VARCHAR(255)"/>
-            <column name="imc_assignment_group" type="VARCHAR(255)"/>
-            <column name="imc_assignment" type="VARCHAR(255)"/>
-            <column name="imc_sub_assignment" type="VARCHAR(255)"/>
-            <column name="content_area" type="VARCHAR(255)"/>
-            <column name="content_type" type="VARCHAR(255)"/>
-            <column name="cost_type" type="VARCHAR(255)"/>
-            <column name="ios_area" type="VARCHAR(255)"/>
-            <column name="r_and_pc_contact" type="VARCHAR(255)"/>
-            <column name="imc_area" type="VARCHAR(255)"/>
-            <column name="order_system" type="VARCHAR(255)"/>
-            <column name="content" type="VARCHAR(255)"/>
-            <column name="weeks" type="INT"/>
-            <column name="last_updated" type="datetime" />
-            <column name="last_updated_by_id" type="VARCHAR(255)" />
-        </createTable>
-        <createTable tableName="business_model">
-            <column name="business_model_id" type="BIGINT" autoIncrement="true">
-                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_business_model"/>
-            </column>
-            <column name="name" type="VARCHAR(255)"/>
-            <column name="sort_order" type="INT"/>
-            <column name="last_updated" type="datetime" />
-            <column name="last_updated_by_id" type="VARCHAR(255)" />
-        </createTable>
-        <createTable tableName="business_area">
-            <column name="business_area_id" type="BIGINT" autoIncrement="true">
-                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_business_area"/>
-            </column>
-            <column name="name" type="VARCHAR(255)"/>
-            <column name="sort_order" type="INT"/>
-            <column name="last_updated" type="datetime" />
-            <column name="last_updated_by_id" type="VARCHAR(255)" />
-        </createTable>
-        <addForeignKeyConstraint baseTableName="price_item" baseColumnNames="business_model_id"
-                                 constraintName="FK_BUSINESS_MODEL_ON_PRICE_ITEM"
-                                 referencedTableName="business_model"
-                                 referencedColumnNames="business_model_id" />
-        <addForeignKeyConstraint baseTableName="price_item" baseColumnNames="business_area_id"
-                                 constraintName="FK_BUSINESS_AREA_ON_PRICE_ITEM"
-                                 referencedTableName="business_area"
-                                 referencedColumnNames="business_area_id" />
-    </changeSet>
+  <changeSet id="1648651778161-1" author="carl-henrik-laulaja (generated)">
+    <createTable tableName="price_item">
+      <column name="price_item_id" type="BIGINT" autoIncrement="true">
+        <constraints nullable="false" primaryKey="true" primaryKeyName="pk_price_item"/>
+      </column>
+      <column name="price_item_name" type="VARCHAR(255)"/>
+      <column name="asset_type_name" type="VARCHAR(255)"/>
+      <column name="asset_format_name" type="VARCHAR(255)"/>
+      <column name="content_type_name" type="VARCHAR(255)"/>
+      <column name="service_type_name" type="VARCHAR(255)"/>
+      <column name="template" type="BOOLEAN"/>
+      <column name="new" type="BOOLEAN"/>
+      <column name="price" type="DOUBLE"/>
+      <column name="pcopt_data_mapping_id" type="BIGINT"/>
+      <column name="business_model_id" type="BIGINT"/>
+      <column name="business_area_id" type="BIGINT"/>
+      <column name="field3" type="INT"/>
+      <column name="imc_responsible_cc" type="VARCHAR(255)"/>
+      <column name="area" type="VARCHAR(255)"/>
+      <column name="imc_assignment_area" type="VARCHAR(255)"/>
+      <column name="imc_assignment_group" type="VARCHAR(255)"/>
+      <column name="imc_assignment" type="VARCHAR(255)"/>
+      <column name="imc_sub_assignment" type="VARCHAR(255)"/>
+      <column name="content_area" type="VARCHAR(255)"/>
+      <column name="content_type" type="VARCHAR(255)"/>
+      <column name="cost_type" type="VARCHAR(255)"/>
+      <column name="ios_area" type="VARCHAR(255)"/>
+      <column name="r_and_pc_contact" type="VARCHAR(255)"/>
+      <column name="imc_area" type="VARCHAR(255)"/>
+      <column name="order_system" type="VARCHAR(255)"/>
+      <column name="content" type="VARCHAR(255)"/>
+      <column name="weeks" type="INT"/>
+      <column name="last_updated" type="datetime"/>
+      <column name="last_updated_by_id" type="VARCHAR(255)"/>
+    </createTable>
+    <createTable tableName="business_model">
+      <column name="business_model_id" type="BIGINT" autoIncrement="true">
+        <constraints nullable="false" primaryKey="true" primaryKeyName="pk_business_model"/>
+      </column>
+      <column name="name" type="VARCHAR(255)"/>
+      <column name="sort_order" type="INT"/>
+      <column name="last_updated" type="datetime"/>
+      <column name="last_updated_by_id" type="VARCHAR(255)"/>
+    </createTable>
+    <createTable tableName="business_area">
+      <column name="business_area_id" type="BIGINT" autoIncrement="true">
+        <constraints nullable="false" primaryKey="true" primaryKeyName="pk_business_area"/>
+      </column>
+      <column name="name" type="VARCHAR(255)"/>
+      <column name="sort_order" type="INT"/>
+      <column name="last_updated" type="datetime"/>
+      <column name="last_updated_by_id" type="VARCHAR(255)"/>
+    </createTable>
+    <addForeignKeyConstraint baseTableName="price_item" baseColumnNames="business_model_id"
+                             constraintName="FK_BUSINESS_MODEL_ON_PRICE_ITEM"
+                             referencedTableName="business_model"
+                             referencedColumnNames="business_model_id"/>
+    <addForeignKeyConstraint baseTableName="price_item" baseColumnNames="business_area_id"
+                             constraintName="FK_BUSINESS_AREA_ON_PRICE_ITEM"
+                             referencedTableName="business_area"
+                             referencedColumnNames="business_area_id"/>
+  </changeSet>
 
 </databaseChangeLog>
