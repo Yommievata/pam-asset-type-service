@@ -27,4 +27,11 @@
         </delete>
     </changeSet>
 
+    <changeSet id="1657264947063-1" author="david stromner">
+        <update tableName="price_item">
+            <column name="business_model_id" value="3"/>
+            <where>business_area_id=9</where>
+        </update>
+    </changeSet>
+
 </databaseChangeLog>
