@@ -10,7 +10,4 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd">
     <include file="liquibase/changelog/business-model-and-area.xml"/>
     <include file="liquibase/changelog/price-item-excel-import.xml"/>
     <include file="liquibase/changelog/db.changelog-1.1.xml"/>
-    <include file="liquibase/changelog/db.changelog-1.2.xml"/>
-    <include file="liquibase/changelog/db.changelog-1.3.xml"/>
-    <include file="liquibase/changelog/db.changelog-1.4.xml"/>
 </databaseChangeLog>

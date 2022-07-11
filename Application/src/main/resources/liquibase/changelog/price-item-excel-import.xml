@@ -41,11 +41,11 @@
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="2"/>
-      <column name="price_item_name" value="Product Usage Film (PUF)"/>
+      <column name="price_item_name" value="Product Usage Film/Stop-Motion (PUF)"/>
       <column name="asset_type_name" value="Product usage film"/>
       <column name="asset_format_name" value="N/A"/>
       <column name="content_type_name" value=""/>
-      <column name="service_type_name" value=""/>
+      <column name="service_type_name" value="Product Usage Film/Stop-Motion (PUF)"/>
       <column name="template" value="false"/>
       <column name="new" value="true"/>
       <column name="price" value="50000.00"/>
@@ -58,7 +58,7 @@
       <column name="imc_assignment_area" value="Common content (ProdCom)"/>
       <column name="imc_assignment_group" value="Product Motion Media - Common Content"/>
       <column name="imc_assignment" value="Template based Product Motion Media"/>
-      <column name="imc_sub_assignment" value="Template based Product Motion Media (S-A)"/>
+      <column name="imc_sub_assignment" value="Product Usage Film/Stop-Motion (PUF)"/>
       <column name="content_area" value="Visual Communication"/>
       <column name="content_type" value="Product motion media"/>
       <column name="cost_type" value="Fixed Price"/>
@@ -66,38 +66,8 @@
       <column name="r_and_pc_contact" value=""/>
       <column name="imc_area" value="PP&amp;F"/>
       <column name="order_system" value=""/>
-      <column name="content" value="Product Usage Film (PUF)"/>
+      <column name="content" value="Product Usage Film/Stop-Motion (PUF)"/>
       <column name="weeks" value="8"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="3"/>
-      <column name="price_item_name" value="Product Function Film (PFF)"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Product Function Film (PFF)"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="price" value="50000.00"/>
-      <column name="pcopt_data_mapping_id" value="7"/>
-      <column name="business_model_id" value="1"/>
-      <column name="business_area_id" value="2"/>
-      <column name="field3" value="1"/>
-      <column name="imc_responsible_cc" value="IMC-CC7645"/>
-      <column name="area" value="Product Motion Media"/>
-      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
-      <column name="imc_assignment_group" value="Product Motion Media - Common Content"/>
-      <column name="imc_assignment" value="Template based Product Motion Media"/>
-      <column name="imc_sub_assignment" value="Template based Product Motion Media (S-A)"/>
-      <column name="content_area" value="Visual Communication"/>
-      <column name="content_type" value="Product motion media"/>
-      <column name="cost_type" value="Fixed Price"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="PP&amp;F"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Product Function Film (PFF)"/>
-      <column name="weeks" value="6"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="4"/>
@@ -1507,479 +1477,61 @@
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="51"/>
-      <column name="price_item_name" value="Cut Through Product Pictures"/>
+      <column name="price_item_name" value="Cut-through product picture"/>
       <column name="asset_type_name" value=""/>
       <column name="asset_format_name" value=""/>
       <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Cut Through Product Pictures"/>
+      <column name="service_type_name" value="Cut-through product picture"/>
       <column name="template" value="false"/>
       <column name="new" value="true"/>
       <column name="pcopt_data_mapping_id" value="51"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="1"/>
       <column name="field3" value="4"/>
       <column name="imc_responsible_cc" value="IMC-CC7645"/>
       <column name="area" value="Product Pictures"/>
       <column name="imc_assignment_area" value="Common content (ProdCom)"/>
       <column name="imc_assignment_group" value="Product Pictures - Common Content"/>
       <column name="imc_assignment" value="Other Product Pictures"/>
-      <column name="imc_sub_assignment" value="Cut through product pictures"/>
+      <column name="imc_sub_assignment" value="Cut-through product picture"/>
       <column name="content_area" value="Other services"/>
       <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
+      <column name="cost_type" value="Fixed Price"/>
       <column name="ios_area" value="VISUAL"/>
       <column name="r_and_pc_contact" value=""/>
       <column name="imc_area" value="PP&amp;F"/>
       <column name="order_system" value="Visual Objects"/>
-      <column name="content" value="Cut Through Product Pictures"/>
+      <column name="content" value="Cut-through product picture"/>
+      <column name="price" value="25000"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="52"/>
-      <column name="price_item_name" value="Comfort Product Pictures"/>
+      <column name="price_item_name" value="Comfort Product Picture"/>
       <column name="asset_type_name" value=""/>
       <column name="asset_format_name" value=""/>
       <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Comfort Product Pictures"/>
+      <column name="service_type_name" value="Comfort Product Picture"/>
       <column name="template" value="false"/>
       <column name="new" value="true"/>
       <column name="pcopt_data_mapping_id" value="52"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="1"/>
       <column name="field3" value="4"/>
       <column name="imc_responsible_cc" value="IMC-CC7645"/>
       <column name="area" value="Product Pictures"/>
       <column name="imc_assignment_area" value="Common content (ProdCom)"/>
       <column name="imc_assignment_group" value="Product Pictures - Common Content"/>
       <column name="imc_assignment" value="Other Product Pictures"/>
-      <column name="imc_sub_assignment" value="Comfort product pictures"/>
+      <column name="imc_sub_assignment" value="Comfort Product Picture"/>
       <column name="content_area" value="Other services"/>
       <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
+      <column name="cost_type" value="Fixed Price"/>
       <column name="ios_area" value="VISUAL"/>
       <column name="r_and_pc_contact" value=""/>
       <column name="imc_area" value="PP&amp;F"/>
       <column name="order_system" value="Visual Objects"/>
-      <column name="content" value="Comfort Product Pictures"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="53"/>
-      <column name="price_item_name" value="Picture volume automation"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Picture volume automation"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="53"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="IMC-CC7645"/>
-      <column name="area" value="Product Pictures"/>
-      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
-      <column name="imc_assignment_group" value="Product Pictures - Common Content"/>
-      <column name="imc_assignment" value="Other Product Pictures"/>
-      <column name="imc_sub_assignment" value="Picture volume automation"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="PP&amp;F"/>
-      <column name="order_system" value="Visual Objects"/>
-      <column name="content" value="Picture volume automation"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="54"/>
-      <column name="price_item_name" value="Food product pictures"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Food product pictures"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="54"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="IMC-CC7645"/>
-      <column name="area" value="Product Pictures"/>
-      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
-      <column name="imc_assignment_group" value="Product Pictures - Common Content"/>
-      <column name="imc_assignment" value="Other Product Pictures"/>
-      <column name="imc_sub_assignment" value="Food product pictures"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="PP&amp;F"/>
-      <column name="order_system" value="Visual Objects"/>
-      <column name="content" value="Food product pictures"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="55"/>
-      <column name="price_item_name" value="Other product pictures - Common C."/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Other product pictures - Common C."/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="55"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="IMC-CC7645"/>
-      <column name="area" value="Product Pictures"/>
-      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
-      <column name="imc_assignment_group" value="Product Pictures - Common Content"/>
-      <column name="imc_assignment" value="Other Product Pictures"/>
-      <column name="imc_sub_assignment" value="Other Product Pictures (S-A)"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="PP&amp;F"/>
-      <column name="order_system" value="Visual Objects"/>
-      <column name="content" value="Other product pictures - Common C."/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="56"/>
-      <column name="price_item_name" value="Non template based MPPs"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Non template based MPPs"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="56"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="IMC-CC7645"/>
-      <column name="area" value="Product Pictures"/>
-      <column name="imc_assignment_area" value="IC Services (Product related)"/>
-      <column name="imc_assignment_group" value="Product Pictures - Product related content"/>
-      <column name="imc_assignment" value="Non template based MPPs"/>
-      <column name="imc_sub_assignment" value="Non template based MPPs (S-A)"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="PP&amp;F"/>
-      <column name="order_system" value="Visual Objects"/>
-      <column name="content" value="Non template based MPPs"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="57"/>
-      <column name="price_item_name" value="Other images"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Other images"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="57"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="IMC-CC7645"/>
-      <column name="area" value="Product Pictures"/>
-      <column name="imc_assignment_area" value="IC Services (Other services)"/>
-      <column name="imc_assignment_group" value="PP&amp;F - Other Inter Company Services"/>
-      <column name="imc_assignment" value="Other HFB requests - PP&amp;F"/>
-      <column name="imc_sub_assignment" value="Other HFB requests - PP&amp;F (S-A)"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="PP&amp;F"/>
-      <column name="order_system" value="Visual Objects"/>
-      <column name="content" value="Other images"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="58"/>
-      <column name="price_item_name" value="Product Assembly Film"/>
-      <column name="asset_type_name" value="Product assembly film"/>
-      <column name="asset_format_name" value="N/A"/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value=""/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="58"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="IMC-CC7645"/>
-      <column name="area" value="Product films &amp; Stop motion"/>
-      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
-      <column name="imc_assignment_group" value="Product Motion Media - Common Content"/>
-      <column name="imc_assignment" value="Other Product Motion Media"/>
-      <column name="imc_sub_assignment" value="Other Product Motion Media (S-A)"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="PP&amp;F"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Product Assembly Film"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="59"/>
-      <column name="price_item_name" value="Product Feature Film"/>
-      <column name="asset_type_name" value="Product feature film"/>
-      <column name="asset_format_name" value="N/A"/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value=""/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="59"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="IMC-CC7645"/>
-      <column name="area" value="Product films &amp; Stop motion"/>
-      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
-      <column name="imc_assignment_group" value="Product Motion Media - Common Content"/>
-      <column name="imc_assignment" value="Other Product Motion Media"/>
-      <column name="imc_sub_assignment" value="Other Product Motion Media (S-A)"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="PP&amp;F"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Product Feature Film"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="60"/>
-      <column name="price_item_name" value="Product Stop Motion"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Product Stop Motion"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="60"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="IMC-CC7645"/>
-      <column name="area" value="Product films &amp; Stop motion"/>
-      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
-      <column name="imc_assignment_group" value="Product Motion Media - Common Content"/>
-      <column name="imc_assignment" value="Other Product Motion Media"/>
-      <column name="imc_sub_assignment" value="Other Product Motion Media (S-A)"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="PP&amp;F"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Product Stop Motion"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="61"/>
-      <column name="price_item_name" value="Other Product films (not templates)"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Other Product films (not templates)"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="61"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="IMC-CC7645"/>
-      <column name="area" value="Product films &amp; Stop motion"/>
-      <column name="imc_assignment_area" value="IC Services (Other services)"/>
-      <column name="imc_assignment_group" value="PP&amp;F - Other Inter Company Services"/>
-      <column name="imc_assignment" value="Other HFB requests - PP&amp;F"/>
-      <column name="imc_sub_assignment" value="Other HFB requests - PP&amp;F (S-A)"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="PP&amp;F"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Other Product films (not templates)"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="62"/>
-      <column name="price_item_name" value="Other films"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Other films"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="62"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="RangeCom"/>
-      <column name="area" value="Other Communication Services"/>
-      <column name="imc_assignment_area" value="IC Services (Other services)"/>
-      <column name="imc_assignment_group" value="RangeCom"/>
-      <column name="imc_assignment" value="???"/>
-      <column name="imc_sub_assignment" value="???"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="Range comm"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Other Product films (not templates)"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="63"/>
-      <column name="price_item_name" value="Rooms"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Rooms"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="63"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="RangeCom"/>
-      <column name="area" value="Range Communication"/>
-      <column name="imc_assignment_area" value="IC Services (Other services)"/>
-      <column name="imc_assignment_group" value="RangeCom"/>
-      <column name="imc_assignment" value="???"/>
-      <column name="imc_sub_assignment" value="???"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="Range comm"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Other films"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="64"/>
-      <column name="price_item_name" value="HFA Communication"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="HFA Communication"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="64"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="RangeCom"/>
-      <column name="area" value="Range Communication"/>
-      <column name="imc_assignment_area" value="Common content (RangeCom)"/>
-      <column name="imc_assignment_group" value="RangeCom"/>
-      <column name="imc_assignment" value="???"/>
-      <column name="imc_sub_assignment" value="???"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="Range comm"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Rooms"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="65"/>
-      <column name="price_item_name" value="Conceptualisation"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Conceptualisation"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="65"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="RangeCom"/>
-      <column name="area" value="Range Communication"/>
-      <column name="imc_assignment_area" value="IC Services (Other services)"/>
-      <column name="imc_assignment_group" value="RangeCom"/>
-      <column name="imc_assignment" value="???"/>
-      <column name="imc_sub_assignment" value="???"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="Range comm"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="HFA Communication"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="66"/>
-      <column name="price_item_name" value="IKEA.com content/solutions"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="IKEA.com content/solutions"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="66"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="RangeCom"/>
-      <column name="area" value="Range Communication"/>
-      <column name="imc_assignment_area" value="IC Services (Other services)"/>
-      <column name="imc_assignment_group" value="RangeCom"/>
-      <column name="imc_assignment" value="???"/>
-      <column name="imc_sub_assignment" value="???"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="Range comm"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Conceptualisation"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="67"/>
-      <column name="price_item_name" value="Other range communication"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Other range communication"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="67"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="RangeCom"/>
-      <column name="area" value="Range Communication"/>
-      <column name="imc_assignment_area" value="IC Services (Other services)"/>
-      <column name="imc_assignment_group" value="RangeCom"/>
-      <column name="imc_assignment" value="???"/>
-      <column name="imc_sub_assignment" value="???"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="Range comm"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="IKEA.com content/solutions"/>
+      <column name="content" value="Comfort Product Picture"/>
+      <column name="price" value="25000"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="68"/>
@@ -2122,90 +1674,6 @@
       <column name="content" value="Overview sign"/>
     </insert>
     <insert tableName="price_item">
-      <column name="price_item_id" value="73"/>
-      <column name="price_item_name" value="Other store communication"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Other store communication"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="73"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="IMC-CC7636"/>
-      <column name="area" value="Store Communiccation"/>
-      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
-      <column name="imc_assignment_group" value="Store comm. - Common Content"/>
-      <column name="imc_assignment" value="Other Store Comm."/>
-      <column name="imc_sub_assignment" value="Other Store Comm. (S-A)"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="P&amp;S Comm"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Designer photo"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="74"/>
-      <column name="price_item_name" value="Other symbols &amp; illustrations"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Other symbols &amp; illustrations"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="74"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="IMC-CC7636"/>
-      <column name="area" value="Symbols &amp; Illustrations"/>
-      <column name="imc_assignment_area" value="IC Services (Other services)"/>
-      <column name="imc_assignment_group" value="P&amp;S - Other Inter Company Services"/>
-      <column name="imc_assignment" value="Other HFB requests - P&amp;S"/>
-      <column name="imc_sub_assignment" value="Other HFB requests - P&amp;S (S-A)"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="P&amp;S Comm"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Other store communication"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="75"/>
-      <column name="price_item_name" value="Other package communication"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Other package communication"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="75"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="IMC-CC7636"/>
-      <column name="area" value="Package Communication"/>
-      <column name="imc_assignment_area" value="IC Services (Product related)"/>
-      <column name="imc_assignment_group" value="Package comm. - Product related content"/>
-      <column name="imc_assignment" value="Other package comm."/>
-      <column name="imc_sub_assignment" value="Other package comm. (S-A)"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="VISUAL"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="P&amp;S Comm"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Other symbols &amp; illustrations"/>
-    </insert>
-    <insert tableName="price_item">
       <column name="price_item_id" value="76"/>
       <column name="price_item_name" value="Disassembly Instructions"/>
       <column name="asset_type_name" value="Disassembly Instructions"/>
@@ -2234,63 +1702,6 @@
       <column name="content" value="Other package communication"/>
     </insert>
     <insert tableName="price_item">
-      <column name="price_item_id" value="77"/>
-      <column name="price_item_name" value="Other product Texts"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Other product Texts"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="price" value="77"/>
-      <column name="pcopt_data_mapping_id" value="77"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="Text"/>
-      <column name="area" value="Text"/>
-      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
-      <column name="imc_assignment_group" value="Text"/>
-      <column name="imc_assignment" value="???"/>
-      <column name="imc_sub_assignment" value="???"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="TEXTS &amp; FACTS"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value="P&amp;S Comm"/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Disassembly Instructions"/>
-    </insert>
-    <insert tableName="price_item">
-      <column name="price_item_id" value="78"/>
-      <column name="price_item_name" value="Development Center Cost"/>
-      <column name="asset_type_name" value=""/>
-      <column name="asset_format_name" value=""/>
-      <column name="content_type_name" value=""/>
-      <column name="service_type_name" value="Development Center Cost"/>
-      <column name="template" value="false"/>
-      <column name="new" value="true"/>
-      <column name="pcopt_data_mapping_id" value="78"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
-      <column name="field3" value="4"/>
-      <column name="imc_responsible_cc" value="N/A"/>
-      <column name="area" value="Other Communication Services"/>
-      <column name="imc_assignment_area" value="N/A"/>
-      <column name="imc_assignment_group" value="N/A"/>
-      <column name="imc_assignment" value="N/A"/>
-      <column name="imc_sub_assignment" value="N/A"/>
-      <column name="content_area" value="Other services"/>
-      <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
-      <column name="ios_area" value="HFB"/>
-      <column name="r_and_pc_contact" value=""/>
-      <column name="imc_area" value=""/>
-      <column name="order_system" value=""/>
-      <column name="content" value="Other product Texts"/>
-    </insert>
-    <insert tableName="price_item">
       <column name="price_item_id" value="79"/>
       <column name="price_item_name" value="Other communication services"/>
       <column name="asset_type_name" value=""/>
@@ -2317,6 +1728,34 @@
       <column name="imc_area" value=""/>
       <column name="order_system" value=""/>
       <column name="content" value="Development Center Cost"/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="98"/>
+      <column name="price_item_name" value="Product Feature Film/Stop-Motion (PFF)"/>
+      <column name="asset_type_name" value=""/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value="Product Feature Film/Stop-Motion (PFF)"/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="50000"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="2"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value="Product Motion Media"/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value="Product Motion Media - Common Content"/>
+      <column name="imc_assignment" value="Template based Product Motion Media"/>
+      <column name="imc_sub_assignment" value="Product Feature Film/Stop-Motion (PFF)"/>
+      <column name="content_area" value="Visual Communication"/>
+      <column name="content_type" value="Product motion media"/>
+      <column name="cost_type" value="Fixed Price"/>
+      <column name="ios_area" value="VISUAL"/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value="Product Feature Film/Stop-Motion (PFF)"/>
     </insert>
     <sql dbms="!h2">SET
     IDENTITY_INSERT price_item OFF</sql>
