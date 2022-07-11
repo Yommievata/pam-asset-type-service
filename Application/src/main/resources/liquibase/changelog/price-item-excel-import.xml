@@ -365,6 +365,7 @@
       <column name="order_system" value=""/>
       <column name="content" value="Buying guide UPDATE"/>
       <column name="weeks" value="5"/>
+      <column name="price" value="5200"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="14"/>
@@ -395,6 +396,7 @@
       <column name="order_system" value=""/>
       <column name="content" value="Story tag with new illustration"/>
       <column name="weeks" value="5"/>
+      <column name="price" value="3200"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="15"/>
@@ -425,6 +427,7 @@
       <column name="order_system" value=""/>
       <column name="content" value="Story sign with new illustration"/>
       <column name="weeks" value="5"/>
+      <column name="price" value="2270"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="16"/>
@@ -455,6 +458,7 @@
       <column name="order_system" value=""/>
       <column name="content" value="Home furnishing guide NEW"/>
       <column name="weeks" value="5"/>
+      <column name="price" value="5000"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="17"/>
@@ -965,6 +969,7 @@
       <column name="order_system" value=""/>
       <column name="content" value="Guarantee brochure NEW"/>
       <column name="weeks" value="5"/>
+      <column name="price" value="6900"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="34"/>
@@ -995,6 +1000,7 @@
       <column name="order_system" value=""/>
       <column name="content" value="Guarantee brochure UPDATE"/>
       <column name="weeks" value="5"/>
+      <column name="price" value="1750"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="35"/>
@@ -1025,6 +1031,7 @@
       <column name="order_system" value=""/>
       <column name="content" value="Symbol sign"/>
       <column name="weeks" value="5"/>
+      <column name="price" value="1550"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="36"/>
@@ -1438,7 +1445,7 @@
       <column name="imc_sub_assignment" value="External check-ins - motion media"/>
       <column name="content_area" value=""/>
       <column name="content_type" value=""/>
-      <column name="cost_type" value=""/>
+      <column name="cost_type" value="Fixed Price"/>
       <column name="ios_area" value=""/>
       <column name="r_and_pc_contact" value=""/>
       <column name="imc_area" value=""/>
@@ -1543,8 +1550,8 @@
       <column name="template" value="false"/>
       <column name="new" value="true"/>
       <column name="pcopt_data_mapping_id" value="68"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="3"/>
       <column name="field3" value="4"/>
       <column name="imc_responsible_cc" value="IMC-CC7636"/>
       <column name="area" value="Store Communiccation"/>
@@ -1554,12 +1561,13 @@
       <column name="imc_sub_assignment" value="Colour Buying Guide NEW"/>
       <column name="content_area" value="Other services"/>
       <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
+      <column name="cost_type" value="Fixed Price"/>
       <column name="ios_area" value="VISUAL"/>
       <column name="r_and_pc_contact" value=""/>
       <column name="imc_area" value="P&amp;S Comm"/>
       <column name="order_system" value=""/>
       <column name="content" value="Other range communication"/>
+      <column name="price" value="61300"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="69"/>
@@ -1571,8 +1579,8 @@
       <column name="template" value="false"/>
       <column name="new" value="false"/>
       <column name="pcopt_data_mapping_id" value="69"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="3"/>
       <column name="field3" value="4"/>
       <column name="imc_responsible_cc" value="IMC-CC7636"/>
       <column name="area" value="Store Communiccation"/>
@@ -1582,12 +1590,13 @@
       <column name="imc_sub_assignment" value="Colour Buying Guide UPDATE"/>
       <column name="content_area" value="Other services"/>
       <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
+      <column name="cost_type" value="Fixed Price"/>
       <column name="ios_area" value="VISUAL"/>
       <column name="r_and_pc_contact" value=""/>
       <column name="imc_area" value="P&amp;S Comm"/>
       <column name="order_system" value=""/>
       <column name="content" value="Colored Buying Guide NEW"/>
+      <column name="price" value="39400"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="70"/>
@@ -1627,8 +1636,8 @@
       <column name="template" value="false"/>
       <column name="new" value="true"/>
       <column name="pcopt_data_mapping_id" value="71"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="3"/>
       <column name="field3" value="4"/>
       <column name="imc_responsible_cc" value="IMC-CC7636"/>
       <column name="area" value="Store Communiccation"/>
@@ -1638,12 +1647,13 @@
       <column name="imc_sub_assignment" value="Overview Sign"/>
       <column name="content_area" value="Other services"/>
       <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
+      <column name="cost_type" value="Fixed Price"/>
       <column name="ios_area" value="VISUAL"/>
       <column name="r_and_pc_contact" value=""/>
       <column name="imc_area" value="P&amp;S Comm"/>
       <column name="order_system" value=""/>
       <column name="content" value="Installation guide"/>
+      <column name="price" value="2250"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="72"/>
@@ -1655,8 +1665,8 @@
       <column name="template" value="false"/>
       <column name="new" value="true"/>
       <column name="pcopt_data_mapping_id" value="72"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="1"/>
       <column name="field3" value="4"/>
       <column name="imc_responsible_cc" value="IMC-CC7636"/>
       <column name="area" value="Store Communiccation"/>
@@ -1666,25 +1676,26 @@
       <column name="imc_sub_assignment" value="Designer Photo"/>
       <column name="content_area" value="Other services"/>
       <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
+      <column name="cost_type" value="Fixed Price"/>
       <column name="ios_area" value="VISUAL"/>
       <column name="r_and_pc_contact" value=""/>
       <column name="imc_area" value="P&amp;S Comm"/>
       <column name="order_system" value=""/>
       <column name="content" value="Overview sign"/>
+      <column name="price" value="10000"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="76"/>
-      <column name="price_item_name" value="Disassembly Instructions"/>
-      <column name="asset_type_name" value="Disassembly Instructions"/>
+      <column name="price_item_name" value="Disassembly instruction"/>
+      <column name="asset_type_name" value="Disassembly instruction"/>
       <column name="asset_format_name" value="N/A"/>
       <column name="content_type_name" value=""/>
       <column name="service_type_name" value=""/>
       <column name="template" value="false"/>
       <column name="new" value="true"/>
       <column name="pcopt_data_mapping_id" value="76"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
+      <column name="business_model_id" value="2"/>
+      <column name="business_area_id" value="9"/>
       <column name="field3" value="4"/>
       <column name="imc_responsible_cc" value="IMC-CC7636"/>
       <column name="area" value="In package Communication"/>
@@ -1694,12 +1705,13 @@
       <column name="imc_sub_assignment" value="Disassembly Instructions"/>
       <column name="content_area" value="Other services"/>
       <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
+      <column name="cost_type" value="Fixed Price"/>
       <column name="ios_area" value="TEXTS &amp; FACTS"/>
       <column name="r_and_pc_contact" value=""/>
       <column name="imc_area" value="P&amp;S Comm"/>
       <column name="order_system" value=""/>
       <column name="content" value="Other package communication"/>
+      <column name="price" value="15000"/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="79"/>
@@ -1711,8 +1723,8 @@
       <column name="template" value="false"/>
       <column name="new" value="true"/>
       <column name="pcopt_data_mapping_id" value="79"/>
-      <column name="business_model_id" value="3"/>
-      <column name="business_area_id" value="11"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="3"/>
       <column name="field3" value="4"/>
       <column name="imc_responsible_cc" value="RangeCom"/>
       <column name="area" value="Other Communication Services"/>
@@ -1722,12 +1734,460 @@
       <column name="imc_sub_assignment" value="???"/>
       <column name="content_area" value="Other services"/>
       <column name="content_type" value="Other services"/>
-      <column name="cost_type" value="Quotation Based"/>
+      <column name="cost_type" value="Fixed Price"/>
       <column name="ios_area" value="HFB"/>
       <column name="r_and_pc_contact" value=""/>
       <column name="imc_area" value=""/>
       <column name="order_system" value=""/>
       <column name="content" value="Development Center Cost"/>
+      <column name="price" value="78350"/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="80"/>
+      <column name="price_item_name" value="Product Assembly Principle Film/Stop-Motion (PAF)"/>
+      <column name="asset_type_name" value="Quality in context product picture"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="25000"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="1"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value=""/>
+      <column name="content_type" value=""/>
+      <column name="cost_type" value="Fixed Price"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="81"/>
+      <column name="price_item_name" value="Main bundle/furniture set picture"/>
+      <column name="asset_type_name" value="Main bundle/furniture set picture"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="6000"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="1"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value=""/>
+      <column name="content_type" value=""/>
+      <column name="cost_type" value="Fixed Price"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="82"/>
+      <column name="price_item_name" value="Context bundle/furniture set picture"/>
+      <column name="asset_type_name" value="Context bundle/furniture set picture"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="25000"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="1"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value=""/>
+      <column name="content_type" value=""/>
+      <column name="cost_type" value="Fixed Price"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="83"/>
+      <column name="price_item_name" value="Food Package Product Picture"/>
+      <column name="asset_type_name" value="Food Package Product Picture"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="25000"/>
+      <column name="business_model_id" value="2"/>
+      <column name="business_area_id" value="7"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value=""/>
+      <column name="content_type" value=""/>
+      <column name="cost_type" value="Fixed Price"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="84"/>
+      <column name="price_item_name" value="Food Included Product Picture"/>
+      <column name="asset_type_name" value="Food Included Product Picture"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="25000"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="1"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value=""/>
+      <column name="content_type" value=""/>
+      <column name="cost_type" value="Fixed Price"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="85"/>
+      <column name="price_item_name" value="Food Texture Product Picture"/>
+      <column name="asset_type_name" value="Food Texture Product Picture"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="25000"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="1"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value=""/>
+      <column name="content_type" value=""/>
+      <column name="cost_type" value="Fixed Price"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="86"/>
+      <column name="price_item_name" value="Food Preparation Product Picture"/>
+      <column name="asset_type_name" value="Food Preparation Product Picture"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="25000"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="1"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value=""/>
+      <column name="content_type" value=""/>
+      <column name="cost_type" value="Fixed Price"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="87"/>
+      <column name="price_item_name" value="Food Serving Product Picture"/>
+      <column name="asset_type_name" value="Food Serving Product Picture"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="25000"/>
+      <column name="business_model_id" value="1"/>
+      <column name="business_area_id" value="1"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value=""/>
+      <column name="content_type" value=""/>
+      <column name="cost_type" value="Fixed Price"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="88"/>
+      <column name="price_item_name" value="Non-standardised product picture"/>
+      <column name="asset_type_name" value="Non-standardised product picture"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="25000"/>
+      <column name="business_model_id" value="3"/>
+      <column name="business_area_id" value="11"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value="Other services"/>
+      <column name="content_type" value="Other services"/>
+      <column name="cost_type" value="Quotation Based"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="89"/>
+      <column name="price_item_name" value="Non-standardised product motion media"/>
+      <column name="asset_type_name" value="Non-standardised product motion media"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="28000"/>
+      <column name="business_model_id" value="3"/>
+      <column name="business_area_id" value="11"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value="Other services"/>
+      <column name="content_type" value="Other services"/>
+      <column name="cost_type" value="Quotation Based"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="90"/>
+      <column name="price_item_name" value="Non-standardised store communication carrier"/>
+      <column name="asset_type_name" value="Non-standardised store communication carrier"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="25000"/>
+      <column name="business_model_id" value="3"/>
+      <column name="business_area_id" value="11"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value="Other services"/>
+      <column name="content_type" value="Other services"/>
+      <column name="cost_type" value="Quotation Based"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="91"/>
+      <column name="price_item_name" value="Non-standardised product illustrations"/>
+      <column name="asset_type_name" value="Non-standardised product illustrations"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="3600"/>
+      <column name="business_model_id" value="3"/>
+      <column name="business_area_id" value="11"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value="Other services"/>
+      <column name="content_type" value="Other services"/>
+      <column name="cost_type" value="Quotation Based"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="92"/>
+      <column name="price_item_name" value="Non-standardised product texts"/>
+      <column name="asset_type_name" value="Non-standardised product texts"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="4000"/>
+      <column name="business_model_id" value="3"/>
+      <column name="business_area_id" value="11"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value="Other services"/>
+      <column name="content_type" value="Other services"/>
+      <column name="cost_type" value="Quotation Based"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="93"/>
+      <column name="price_item_name" value="Non-standardised in-pack communication"/>
+      <column name="asset_type_name" value="Non-standardised in-pack communication"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="4500"/>
+      <column name="business_model_id" value="2"/>
+      <column name="business_area_id" value="11"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value="Other services"/>
+      <column name="content_type" value="Other services"/>
+      <column name="cost_type" value="Quotation Based"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="94"/>
+      <column name="price_item_name" value="Non-standardised on-pack communicaiton"/>
+      <column name="asset_type_name" value="Non-standardised on-pack communicaiton"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="business_model_id" value="3"/>
+      <column name="business_area_id" value="11"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value="Other services"/>
+      <column name="content_type" value="Other services"/>
+      <column name="cost_type" value="Quotation Based"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
+    </insert>
+    <insert tableName="price_item">
+      <column name="price_item_id" value="95"/>
+      <column name="price_item_name" value="Non-standardised product symbols"/>
+      <column name="asset_type_name" value="Non-standardised product symbols"/>
+      <column name="asset_format_name" value="N/A"/>
+      <column name="content_type_name" value=""/>
+      <column name="service_type_name" value=""/>
+      <column name="template" value="false"/>
+      <column name="new" value="true"/>
+      <column name="price" value="25000"/>
+      <column name="business_model_id" value="3"/>
+      <column name="business_area_id" value="11"/>
+      <column name="field3" value="1"/>
+      <column name="imc_responsible_cc" value=""/>
+      <column name="area" value=""/>
+      <column name="imc_assignment_area" value="Common content (ProdCom)"/>
+      <column name="imc_assignment_group" value=""/>
+      <column name="imc_assignment" value=""/>
+      <column name="imc_sub_assignment" value=""/>
+      <column name="content_area" value="Other services"/>
+      <column name="content_type" value="Other services"/>
+      <column name="cost_type" value="Quotation Based"/>
+      <column name="ios_area" value=""/>
+      <column name="r_and_pc_contact" value=""/>
+      <column name="imc_area" value=""/>
+      <column name="order_system" value=""/>
+      <column name="content" value=""/>
     </insert>
     <insert tableName="price_item">
       <column name="price_item_id" value="98"/>
