@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="1659962517190-6" author="carl-henrik-laulaja (generated)">
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_format_class ON</sql>
+        <insert tableName="asset_type_format_class">
+            <column name="id" value="1"/>
+            <column name="name" value="Text" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_format_class">
+            <column name="id" value="2"/>
+            <column name="name" value="Visual" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_format_class">
+            <column name="id" value="3"/>
+            <column name="name" value="3D-Model" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_format_class">
+            <column name="id" value="4"/>
+            <column name="name" value="Instructions" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_format_class">
+            <column name="id" value="6"/>
+            <column name="name" value="Buing guide" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_format_class">
+            <column name="id" value="7"/>
+            <column name="name" value="Physical sample" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_format_class">
+            <column name="id" value="9"/>
+            <column name="name" value="Care Instructions" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_format_class">
+            <column name="id" value="10"/>
+            <column name="name" value="Good To Know" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_format_class">
+            <column name="id" value="11"/>
+            <column name="name" value="People and Planet" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_format_class">
+            <column name="id" value="12"/>
+            <column name="name" value="Product text" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_format_class">
+            <column name="id" value="13"/>
+            <column name="name" value="VO" />
+            <column name="definition" value="" />
+        </insert>
+
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_format_class OFF</sql>
+    </changeSet>
+</databaseChangeLog>

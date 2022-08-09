@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="1659962517190-4" author="carl-henrik-laulaja (generated)">
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_organisation ON</sql>
+        <insert tableName="asset_type_organisation">
+            <column name="id" value="1"/>
+            <column name="name" value="Text &amp; Fact" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_organisation">
+            <column name="id" value="2"/>
+            <column name="name" value="Symbol &amp; Illustration" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_organisation">
+            <column name="id" value="3"/>
+            <column name="name" value="Store Communication" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_organisation">
+            <column name="id" value="4"/>
+            <column name="name" value="In Package communication" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_organisation">
+            <column name="id" value="5"/>
+            <column name="name" value="On Package communication" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_organisation">
+            <column name="id" value="6"/>
+            <column name="name" value="Text &amp; Visual" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_organisation">
+            <column name="id" value="7"/>
+            <column name="name" value="Range" />
+            <column name="definition" value="" />
+        </insert>
+
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_organisation OFF</sql>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="1659962517190-6" author="carl-henrik-laulaja (generated)">
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_format ON</sql>
+        <insert tableName="asset_type_format">
+            <column name="id" value="7"/>
+            <column name="name" value="Appliances" />
+            <column name="class_id" value="3" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="8"/>
+            <column name="name" value="General" />
+            <column name="class_id" value="3" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="9"/>
+            <column name="name" value="Textile product" />
+            <column name="class_id" value="3" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="10"/>
+            <column name="name" value="Complex soft product" />
+            <column name="class_id" value="3" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="11"/>
+            <column name="name" value="1-8 steps" />
+            <column name="class_id" value="4" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="12"/>
+            <column name="name" value="9-20 steps" />
+            <column name="class_id" value="4" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="13"/>
+            <column name="name" value="21-36 steps" />
+            <column name="class_id" value="4" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="14"/>
+            <column name="name" value="36+ steps" />
+            <column name="class_id" value="4" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="63"/>
+            <column name="name" value="RT3D" />
+            <column name="class_id" value="3" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="64"/>
+            <column name="name" value="IHP Adaptation" />
+            <column name="class_id" value="3" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="110"/>
+            <column name="name" value="Accenten - Kitchens" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+
+        <insert tableName="asset_type_format">
+            <column name="id" value="111"/>
+            <column name="name" value="Bleaching" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="112"/>
+            <column name="name" value="Candle" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="113"/>
+            <column name="name" value="Cleaning" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="114"/>
+            <column name="name" value="Decorative bulbs" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="115"/>
+            <column name="name" value="Do not use" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="116"/>
+            <column name="name" value="Dry cleaning" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="117"/>
+            <column name="name" value="Drying" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="118"/>
+            <column name="name" value="Durability" />
+            <column name="definition" value="Responds to the consumers' need to know about the IKEA approach to quality and testing, it informs that a product is tested to meet certain criteria and meets laws and standards." />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="119"/>
+            <column name="name" value="Energy-saving bulb" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="120"/>
+            <column name="name" value="Feng Shui" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="121"/>
+            <column name="name" value="Fertiliser" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="122"/>
+            <column name="name" value="Flourescent tubes" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="123"/>
+            <column name="name" value="Globes" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="124"/>
+            <column name="name" value="Halogen bulbs" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="125"/>
+            <column name="name" value="Ironing" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="126"/>
+            <column name="name" value="LED" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="127"/>
+            <column name="name" value="Light Flux" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="128"/>
+            <column name="name" value="Lighting others" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="129"/>
+            <column name="name" value="Low-energy bulb" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="130"/>
+            <column name="name" value="Maintenance" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="131"/>
+            <column name="name" value="Others" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="132"/>
+            <column name="name" value="Outdoor furniture text" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="133"/>
+            <column name="name" value="Placement" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="134"/>
+            <column name="name" value="Pruning" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="135"/>
+            <column name="name" value="Reflector bulbs" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="136"/>
+            <column name="name" value="Rugs" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="137"/>
+            <column name="name" value="Shrinkage" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="138"/>
+            <column name="name" value="Small round bulbs" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="139"/>
+            <column name="name" value="Stains" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="140"/>
+            <column name="name" value="Standard bulbs" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="141"/>
+            <column name="name" value="Temperature" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="142"/>
+            <column name="name" value="Textiles others" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="143"/>
+            <column name="name" value="Tumble drying" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="144"/>
+            <column name="name" value="Washing" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="145"/>
+            <column name="name" value="Water" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="146"/>
+            <column name="name" value="Watering and fertilising" />
+            <column name="class_id" value="9" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="147"/>
+            <column name="name" value="Product Story" />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="148"/>
+            <column name="name" value="Acc. included (only white goods)" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="149"/>
+            <column name="name" value="Age recommendations" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="150"/>
+            <column name="name" value="Combined with" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="151"/>
+            <column name="name" value="Compl. assembly information" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="152"/>
+            <column name="name" value="Complementary info measurements" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="153"/>
+            <column name="name" value="Comprises" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="154"/>
+            <column name="name" value="Fits" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="155"/>
+            <column name="name" value="Functions (only white goods)" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="156"/>
+            <column name="name" value="Functions (other)" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="157"/>
+            <column name="name" value="Included" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="158"/>
+            <column name="name" value="May be completed" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="159"/>
+            <column name="name" value="Performance (only white goods)" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="160"/>
+            <column name="name" value="Performance (other)" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="161"/>
+            <column name="name" value="Plant information" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="162"/>
+            <column name="name" value="Preparation (FOOD)" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="163"/>
+            <column name="name" value="Purchase-/Other information" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="164"/>
+            <column name="name" value="Safety information" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="165"/>
+            <column name="name" value="Sold separately" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="166"/>
+            <column name="name" value="Storage (FOOD)" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="167"/>
+            <column name="name" value="Test results and compliance" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="168"/>
+            <column name="name" value="Warning" />
+            <column name="definition" value="These texts provide important information regarding safety. They should only be used if necessary in order to not dilute the word warning." />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="169"/>
+            <column name="name" value="White goods information" />
+            <column name="class_id" value="10" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="170"/>
+            <column name="name" value="Coordination" />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="183"/>
+            <column name="name" value="Designer thoughts" />
+            <column name="definition" value="A quote from a designer. A text that shares the designer's ideas and inspiration with the consumer." />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="184"/>
+            <column name="name" value="Energy and Resources" />
+            <column name="definition" value="These texts are about what IKEA is doing to make a product more sustainable, e.g. choice of material, recyclability or how we work with chemicals." />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="185"/>
+            <column name="name" value="Form/Design process" />
+            <column name="definition" value="Describes the design process, how a product has been designed and why. NB! In difference to the designer thought it is not presented as a quote and can be told by any person involved in the process." />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="186"/>
+            <column name="name" value="Function/solution" />
+            <column name="definition" value="Describes the function of a product, e.g. advice of how customers shoud use a product, its functions or how to combine various parts in a system." />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="187"/>
+            <column name="name" value="How to choose" />
+            <column name="definition" value="Understand how to choose. Describes e.g. how to combine products from a functional perspective (not co-ordination) to help consumers choose and buy a product or how to use it after purchase." />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="188"/>
+            <column name="name" value="Low price" />
+            <column name="definition" value="Describes what IKEA has done to reduce the price of a product, linking it to the IKEA Concept (low price with a meaning). An example is smarter production techniques or increased purchasing volumes." />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="189"/>
+            <column name="name" value="Material" />
+            <column name="definition" value="A fact which specifies materials and surface treatments." />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="190"/>
+            <column name="name" value="People and Communities" />
+            <column name="definition" value="These texts are related to IKEA Social Initiatives, e.g. solar panel lamps for refugees as one example." />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="191"/>
+            <column name="name" value="Product story summary" />
+            <column name="definition" value="A summary of a full length product story (see &quot;full length text&quot;)." />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="192"/>
+            <column name="name" value="Quality/durability" />
+            <column name="definition" value="Responds to the consumers' need to know about the IKEA approach to quality and testing, it informs that a product is tested to meet certain criteria and meets laws and standards." />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="193"/>
+            <column name="name" value="Summary" />
+            <column name="definition" value="These texts condense the most important information about a product or series in a number of factual statements." />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="194"/>
+            <column name="name" value="Sustainable life at home" />
+            <column name="definition" value="These texts are about how a product or range can help the consumer to live a more sustainable life at home and presents solutions on how to do that." />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="195"/>
+            <column name="name" value="*End of life" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="196"/>
+            <column name="name" value="*Manufactoring" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="197"/>
+            <column name="name" value="*Raw material" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="198"/>
+            <column name="name" value="*Use" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="199"/>
+            <column name="name" value="Circular &amp; climate positive" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="200"/>
+            <column name="name" value="Fair &amp; equal" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="201"/>
+            <column name="name" value="Healthy &amp; sustainable living" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="202"/>
+            <column name="name" value="Sust prod Material/environmentally better" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="203"/>
+            <column name="name" value="Sust prod Material/IKEA requirements" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="204"/>
+            <column name="name" value="Sust prod Material/packaging &amp; transport" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="205"/>
+            <column name="name" value="Sust prod Material/recycled" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="206"/>
+            <column name="name" value="Sust prod Material/renewable" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="207"/>
+            <column name="name" value="Sust prod Recyclable" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="208"/>
+            <column name="name" value="Sust production Energy" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="209"/>
+            <column name="name" value="Sust production Waste" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="210"/>
+            <column name="name" value="Sust production Water" />
+            <column name="class_id" value="11" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="211"/>
+            <column name="name" value="Customer Benefit" />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="212"/>
+            <column name="name" value="Customer Benefit Summary" />
+            <column name="class_id" value="12" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="213"/>
+            <column name="name" value="Close up in context" />
+            <column name="class_id" value="13" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="214"/>
+            <column name="name" value="Food serving suggestion" />
+            <column name="class_id" value="13" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="215"/>
+            <column name="name" value="Food texture" />
+            <column name="class_id" value="13" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="216"/>
+            <column name="name" value="What is included" />
+            <column name="class_id" value="13" />
+            <column name="active" value="false" />
+        </insert>
+        <insert tableName="asset_type_format">
+            <column name="id" value="217"/>
+            <column name="name" value="Food preperation" />
+            <column name="class_id" value="13" />
+            <column name="active" value="false" />
+        </insert>
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_format OFF</sql>
+    </changeSet>
+</databaseChangeLog>

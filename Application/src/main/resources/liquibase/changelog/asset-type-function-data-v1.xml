@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="1659962517190-1" author="carl-henrik-laulaja (generated)">
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_function ON</sql>
+        <insert tableName="asset_type_function">
+            <column name="id" value="1"/>
+            <column name="name" value="Assembly" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="2"/>
+            <column name="name" value="Benefit" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="3"/>
+            <column name="name" value="Care" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="4"/>
+            <column name="name" value="Colour" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="5"/>
+            <column name="name" value="Designer" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="6"/>
+            <column name="name" value="Disassembly" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="7"/>
+            <column name="name" value="Guarantee" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="8"/>
+            <column name="name" value="How to" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="9"/>
+            <column name="name" value="Material" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="10"/>
+            <column name="name" value="Measurment" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="11"/>
+            <column name="name" value="Package" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="12"/>
+            <column name="name" value="Store communication" />
+            <column name="definition" value="" />
+        </insert>
+
+        <insert tableName="asset_type_function">
+            <column name="id" value="14"/>
+            <column name="name" value="Feature" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="15"/>
+            <column name="name" value="Function" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="16"/>
+            <column name="name" value="Story" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="17"/>
+            <column name="name" value="Usage" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="18"/>
+            <column name="name" value="Performance" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="19"/>
+            <column name="name" value="Food" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="20"/>
+            <column name="name" value="Plant" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="21"/>
+            <column name="name" value="Quality" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="22"/>
+            <column name="name" value="Safety" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="23"/>
+            <column name="name" value="Sustainability" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="24"/>
+            <column name="name" value="Technical" />
+            <column name="definition" value="" />
+        </insert>
+        <insert tableName="asset_type_function">
+            <column name="id" value="25"/>
+            <column name="name" value="Warning" />
+            <column name="definition" value="" />
+        </insert>
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_function OFF</sql>
+    </changeSet>
+</databaseChangeLog>

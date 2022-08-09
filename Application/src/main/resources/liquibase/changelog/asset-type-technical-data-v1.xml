@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="1659962517190-5" author="carl-henrik-laulaja (generated)">
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_technical ON</sql>
+        <insert tableName="asset_type_technical">
+            <column name="id" value="9"/>
+            <column name="name" value="Visual" />
+            <column name="definition" value="" />
+            <column name="template_is_mandatory" value="false" />
+            <column name="can_use_template" value="true" />
+        </insert>
+        <insert tableName="asset_type_technical">
+            <column name="id" value="2"/>
+            <column name="name" value="Text" />
+            <column name="definition" value="" />
+            <column name="template_is_mandatory" value="false" />
+            <column name="can_use_template" value="false" />
+        </insert>
+        <insert tableName="asset_type_technical">
+            <column name="id" value="7"/>
+            <column name="name" value="Motion media" />
+            <column name="definition" value="" />
+            <column name="template_is_mandatory" value="false" />
+            <column name="can_use_template" value="true" />
+        </insert>
+        <insert tableName="asset_type_technical">
+            <column name="id" value="1"/>
+            <column name="name" value="3D-model" />
+            <column name="definition" value="" />
+            <column name="parent_id" value="9" />
+            <column name="template_is_mandatory" value="false" />
+            <column name="can_use_template" value="false" />
+        </insert>
+        <insert tableName="asset_type_technical">
+            <column name="id" value="3"/>
+            <column name="name" value="Picture" />
+            <column name="definition" value="" />
+            <column name="parent_id" value="9" />
+            <column name="template_is_mandatory" value="true" />
+            <column name="can_use_template" value="true" />
+        </insert>
+        <insert tableName="asset_type_technical">
+            <column name="id" value="4"/>
+            <column name="name" value="Illustration" />
+            <column name="definition" value="" />
+            <column name="parent_id" value="9" />
+            <column name="template_is_mandatory" value="false" />
+            <column name="can_use_template" value="true" />
+        </insert>
+        <insert tableName="asset_type_technical">
+            <column name="id" value="5"/>
+            <column name="name" value="Fact" />
+            <column name="definition" value="" />
+            <column name="parent_id" value="2" />
+            <column name="template_is_mandatory" value="false" />
+            <column name="can_use_template" value="true" />
+        </insert>
+        <insert tableName="asset_type_technical">
+            <column name="id" value="6"/>
+            <column name="name" value="Film" />
+            <column name="definition" value="" />
+            <column name="parent_id" value="7" />
+            <column name="template_is_mandatory" value="false" />
+            <column name="can_use_template" value="false" />
+        </insert>
+        <insert tableName="asset_type_technical">
+            <column name="id" value="8"/>
+            <column name="name" value="Symbol" />
+            <column name="definition" value="" />
+            <column name="parent_id" value="9" />
+            <column name="template_is_mandatory" value="false" />
+            <column name="can_use_template" value="true" />
+        </insert>
+        <insert tableName="asset_type_technical">
+            <column name="id" value="10"/>
+            <column name="name" value="Layout" />
+            <column name="definition" value="" />
+            <column name="parent_id" value="9" />
+            <column name="template_is_mandatory" value="false" />
+            <column name="can_use_template" value="true" />
+        </insert>
+
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_technical OFF</sql>
+    </changeSet>
+</databaseChangeLog>

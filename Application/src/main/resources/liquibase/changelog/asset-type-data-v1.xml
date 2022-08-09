@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="1659962517190-7" author="carl-henrik-laulaja (generated)">
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type ON</sql>
+        <insert tableName="asset_type">
+            <column name="id" value="365"/>
+            <column name="name" value="Product Picture" />
+            <column name="short_name" value="" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="366"/>
+            <column name="name" value="Product Film" />
+            <column name="short_name" value="" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="370"/>
+            <column name="name" value="Store communication" />
+            <column name="short_name" value="" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="372"/>
+            <column name="name" value="Product text" />
+            <column name="short_name" value="" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="384"/>
+            <column name="name" value="Product illustration" />
+            <column name="short_name" value="" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="388"/>
+            <column name="name" value="Package Communication" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="11" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="122"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Warning text" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="25" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="123"/>
+            <column name="parent_id" value="388" />
+            <column name="name" value="Advice &amp; Instruction text" />
+            <column name="short_name" value="" />
+            <column name="organisation_id" value="4" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="125"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Colour" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="4" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="127"/>
+            <column name="parent_id" value="365" />
+            <column name="name" value="Context product picture" />
+            <column name="short_name" value="CPP" />
+            <column name="technical_id" value="3" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="128"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Design text" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="130"/>
+            <column name="name" value="Designer picture" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="5" />
+            <column name="technical_id" value="3" />
+            <column name="class_id" value="2" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="132"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Guarantee text" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="7" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="133"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="How to choose/use text" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="8" />
+            <column name="technical_id" value="2" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="139"/>
+            <column name="parent_id" value="365" />
+            <column name="name" value="Functional product picture" />
+            <column name="short_name" value="FPP" />
+            <column name="function_id" value="15" />
+            <column name="technical_id" value="3" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="140"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Information text" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="155"/>
+            <column name="parent_id" value="384" />
+            <column name="name" value="Main product illustration" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="4" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="156"/>
+            <column name="parent_id" value="365" />
+            <column name="name" value="Main product picture" />
+            <column name="short_name" value="MPP" />
+            <column name="technical_id" value="3" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="158"/>
+            <column name="parent_id" value="384" />
+            <column name="name" value="Measurement illustration" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="10" />
+            <column name="technical_id" value="4" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="159"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Measurement text" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="10" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="160"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Measurements" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="10" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="168"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Material text" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="9" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="175"/>
+            <column name="parent_id" value="366" />
+            <column name="name" value="Product feature film" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="14" />
+            <column name="technical_id" value="6" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="177"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Product type" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="178"/>
+            <column name="parent_id" value="366" />
+            <column name="name" value="Product usage film" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="17" />
+            <column name="technical_id" value="6" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="179"/>
+            <column name="parent_id" value="365" />
+            <column name="name" value="Quality product picture" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="21" />
+            <column name="technical_id" value="3" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="181"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Benefit text" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="2" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="183"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Care instructions" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="3" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="title_id" value="3" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="187"/>
+            <column name="name" value="Symbol" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="8" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="188"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Technical information" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="24" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="189"/>
+            <column name="parent_id" value="388" />
+            <column name="name" value="Assembly instruction" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="1" />
+            <column name="organisation_id" value="4" />
+            <column name="technical_id" value="4" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="190"/>
+            <column name="parent_id" value="366" />
+            <column name="name" value="Product assembly film" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="1" />
+            <column name="technical_id" value="6" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="195"/>
+            <column name="name" value="Disassembly Instructions" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="6" />
+            <column name="technical_id" value="4" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="196"/>
+            <column name="name" value="3D-Model" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="1" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="203"/>
+            <column name="parent_id" value="370" />
+            <column name="name" value="Buying guide" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="12" />
+            <column name="technical_id" value="10" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="222"/>
+            <column name="parent_id" value="370" />
+            <column name="name" value="Function tag" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="10" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="227"/>
+            <column name="parent_id" value="370" />
+            <column name="name" value="Guarantee brochure" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="7" />
+            <column name="technical_id" value="10" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="229"/>
+            <column name="parent_id" value="370" />
+            <column name="name" value="Home furnishing guide" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="10" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="239"/>
+            <column name="parent_id" value="388" />
+            <column name="name" value="Law &amp; Warning" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="7" />
+            <column name="organisation_id" value="4" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="271"/>
+            <column name="parent_id" value="366" />
+            <column name="name" value="Product Function Film" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="15" />
+            <column name="technical_id" value="6" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="285"/>
+            <column name="parent_id" value="370" />
+            <column name="name" value="Story sign" />
+            <column name="short_name" value="" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="286"/>
+            <column name="parent_id" value="370" />
+            <column name="name" value="Story tag" />
+            <column name="short_name" value="" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="294"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Benefit summary" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="2" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="320"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="More sustainable material" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="9" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="title_id" value="2" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="322"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Packaging &amp; transport" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="11" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="title_id" value="2" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="323"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Material efficincy (more from less)" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="9" />
+            <column name="technical_id" value="2" />
+            <column name="class_id" value="1" />
+            <column name="title_id" value="2" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="352"/>
+            <column name="parent_id" value="365" />
+            <column name="name" value="Cut through product picture" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="7" />
+            <column name="technical_id" value="3" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="381"/>
+            <column name="name" value="Shopable image" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="3" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="383"/>
+            <column name="name" value="Physical sample" />
+            <column name="short_name" value="" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="389"/>
+            <column name="parent_id" value="384" />
+            <column name="name" value="Marking" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="11" />
+            <column name="technical_id" value="4" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="390"/>
+            <column name="parent_id" value="366" />
+            <column name="name" value="Product stop motion" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="6" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="391"/>
+            <column name="parent_id" value="370" />
+            <column name="name" value="Symbol sign" />
+            <column name="short_name" value="" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="392"/>
+            <column name="parent_id" value="365" />
+            <column name="name" value="Comfort Product Pictures" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="3" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="393"/>
+            <column name="name" value="Non-Product Film" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="6" />
+            <column name="class_id" value="2" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="394"/>
+            <column name="name" value="Non-Product Image" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="3" />
+            <column name="class_id" value="2" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="395"/>
+            <column name="parent_id" value="388" />
+            <column name="name" value="Packaging original" />
+            <column name="short_name" value="" />
+            <column name="function_id" value="11" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="397"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="Good To Know" />
+            <column name="short_name" value="" />
+            <column name="title_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="398"/>
+            <column name="parent_id" value="372" />
+            <column name="name" value="People and Planet" />
+            <column name="short_name" value="" />
+            <column name="title_id" value="2" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="399"/>
+            <column name="parent_id" value="365" />
+            <column name="name" value="Package picture" />
+            <column name="short_name" value="" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <insert tableName="asset_type">
+            <column name="id" value="400"/>
+            <column name="parent_id" value="370" />
+            <column name="name" value="Installation Guide" />
+            <column name="short_name" value="" />
+            <column name="technical_id" value="10" />
+            <column name="class_id" value="1" />
+            <column name="digital_asset" value="true" />
+            <column name="active" value="true" />
+        </insert>
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type OFF</sql>
+    </changeSet>
+</databaseChangeLog>

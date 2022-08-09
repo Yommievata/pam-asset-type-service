@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="1659962517190-3" author="carl-henrik-laulaja (generated)">
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_title ON</sql>
+        <insert tableName="asset_type_title">
+            <column name="id" value="1"/>
+            <column name="name" value="Good to know" />
+            <column name="definition" value="Main usage PIA" />
+        </insert>
+        <insert tableName="asset_type_title">
+            <column name="id" value="2"/>
+            <column name="name" value="People &amp; Planet" />
+            <column name="definition" value="Main usage PIA" />
+        </insert>
+        <insert tableName="asset_type_title">
+            <column name="id" value="3"/>
+            <column name="name" value="Care Instructions" />
+            <column name="definition" value="Main usage PIA" />
+        </insert>
+        <insert tableName="asset_type_title">
+            <column name="id" value="4"/>
+            <column name="name" value="Fulllength Text" />
+            <column name="definition" value="Main usage PIA" />
+        </insert>
+
+        <insert tableName="asset_type_title">
+            <column name="id" value="6"/>
+            <column name="name" value="Long Text" />
+            <column name="definition" value="Main usage PIA" />
+        </insert>
+        <insert tableName="asset_type_title">
+            <column name="id" value="7"/>
+            <column name="name" value="Medium Text" />
+            <column name="definition" value="Main usage PIA" />
+        </insert>
+
+        <insert tableName="asset_type_title">
+            <column name="id" value="9"/>
+            <column name="name" value="Short Text" />
+            <column name="definition" value="Main usage PIA" />
+        </insert>
+
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_title OFF</sql>
+    </changeSet>
+</databaseChangeLog>

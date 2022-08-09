@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="1659962517190-8" author="carl-henrik-laulaja (generated)">
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_allowed_asset_type_format ON</sql>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="68"/>
+            <column name="asset_type_id" value="189" />
+            <column name="asset_type_format_id" value="11" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="69"/>
+            <column name="asset_type_id" value="189" />
+            <column name="asset_type_format_id" value="12" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="70"/>
+            <column name="asset_type_id" value="189" />
+            <column name="asset_type_format_id" value="13" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="71"/>
+            <column name="asset_type_id" value="189" />
+            <column name="asset_type_format_id" value="14" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="116"/>
+            <column name="asset_type_id" value="196" />
+            <column name="asset_type_format_id" value="9" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="117"/>
+            <column name="asset_type_id" value="196" />
+            <column name="asset_type_format_id" value="8" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="118"/>
+            <column name="asset_type_id" value="196" />
+            <column name="asset_type_format_id" value="10" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="119"/>
+            <column name="asset_type_id" value="196" />
+            <column name="asset_type_format_id" value="7" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="123"/>
+            <column name="asset_type_id" value="195" />
+            <column name="asset_type_format_id" value="11" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="124"/>
+            <column name="asset_type_id" value="195" />
+            <column name="asset_type_format_id" value="12" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="125"/>
+            <column name="asset_type_id" value="195" />
+            <column name="asset_type_format_id" value="13" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="126"/>
+            <column name="asset_type_id" value="195" />
+            <column name="asset_type_format_id" value="14" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="142"/>
+            <column name="asset_type_id" value="196" />
+            <column name="asset_type_format_id" value="64" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="143"/>
+            <column name="asset_type_id" value="196" />
+            <column name="asset_type_format_id" value="63" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="145"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="110" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="146"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="111" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="147"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="112" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="144"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="113" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="149"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="114" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="150"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="115" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="151"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="116" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="152"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="117" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="153"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="118" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="154"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="119" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="155"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="120" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="156"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="121" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="157"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="122" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="158"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="123" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="159"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="124" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="160"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="125" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="161"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="126" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="162"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="127" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="163"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="128" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="164"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="129" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="165"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="130" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="166"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="131" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="167"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="132" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="168"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="133" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="169"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="134" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="170"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="135" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="171"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="136" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="172"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="137" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="173"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="138" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="174"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="139" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="175"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="140" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="176"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="141" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="177"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="142" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="178"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="143" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="179"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="144" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="180"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="145" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="181"/>
+            <column name="asset_type_id" value="183" />
+            <column name="asset_type_format_id" value="146" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="182"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="148" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="183"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="149" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="184"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="150" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="185"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="151" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="186"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="152" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="187"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="153" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="188"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="154" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="189"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="155" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="190"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="156" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="191"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="157" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="192"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="158" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="193"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="159" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="194"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="160" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="195"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="161" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="196"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="162" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="197"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="163" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="198"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="164" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="199"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="165" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="200"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="166" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="201"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="167" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="202"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="168" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="203"/>
+            <column name="asset_type_id" value="397" />
+            <column name="asset_type_format_id" value="169" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="204"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="195" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="205"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="196" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="206"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="197" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="207"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="198" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="208"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="199" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="209"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="200" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="210"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="201" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="211"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="202" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="212"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="203" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="213"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="204" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="214"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="205" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="215"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="206" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="216"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="207" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="217"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="208" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="218"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="209" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="219"/>
+            <column name="asset_type_id" value="398" />
+            <column name="asset_type_format_id" value="210" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="220"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="147" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="221"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="170" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="234"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="183" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="235"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="184" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="236"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="185" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="237"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="186" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="238"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="187" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="239"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="188" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="240"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="189" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="241"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="190" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="242"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="191" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="243"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="192" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="244"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="193" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="245"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="194" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="246"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="211" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="247"/>
+            <column name="asset_type_id" value="372" />
+            <column name="asset_type_format_id" value="212" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="248"/>
+            <column name="asset_type_id" value="127" />
+            <column name="asset_type_format_id" value="213" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="249"/>
+            <column name="asset_type_id" value="127" />
+            <column name="asset_type_format_id" value="214" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="250"/>
+            <column name="asset_type_id" value="179" />
+            <column name="asset_type_format_id" value="215" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="251"/>
+            <column name="asset_type_id" value="127" />
+            <column name="asset_type_format_id" value="216" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="252"/>
+            <column name="asset_type_id" value="139" />
+            <column name="asset_type_format_id" value="217" />
+            <column name="default_package" value="false" />
+            <column name="delete" value="false" />
+        </insert>
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_allowed_asset_type_format OFF</sql>
+    </changeSet>
+</databaseChangeLog>

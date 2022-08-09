@@ -18,4 +18,13 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd">
     <include file="liquibase/changelog/asset-type-title-v1.xml"/>
     <include file="liquibase/changelog/asset-type-v1.xml"/>
     <include file="liquibase/changelog/asset-type-allowed-asset-type-format-v1.xml"/>
+    <include file="liquibase/changelog/asset-type-function-data-v1.xml" />
+    <include file="liquibase/changelog/asset-type-class-data-v1.xml" />
+    <include file="liquibase/changelog/asset-type-title-data-v1.xml" />
+    <include file="liquibase/changelog/asset-type-organisation-data-v1.xml" />
+    <include file="liquibase/changelog/asset-type-technical-data-v1.xml" />
+    <include file="liquibase/changelog/asset-type-format-class-data-v1.xml" />
+    <include file="liquibase/changelog/asset-type-format-data-v1.xml" />
+    <include file="liquibase/changelog/asset-type-data-v1.xml" />
+    <include file="liquibase/changelog/asset-type-allowed-asset-type-format-data-v1.xml" />
 </databaseChangeLog>
