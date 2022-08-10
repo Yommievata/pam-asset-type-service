@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @Service
@@ -16,6 +17,12 @@ public class AssetTypeServiceV1 implements AssetTypeService {
     
     public AssetTypeServiceV1(AssetTypeRepository assetTypeRepository) {
         this.assetTypeRepository = assetTypeRepository;
+    }
+    
+    @Override
+    public Optional<AssetType> getAssetType(Long assetTypeId) {
+        log.debug("Get asset type with id {}", assetTypeId);
+        return assetTypeRepository.findById(assetTypeId);
     }
     
     @Override

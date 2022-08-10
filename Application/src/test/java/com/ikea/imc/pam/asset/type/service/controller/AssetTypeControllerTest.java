@@ -12,6 +12,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -27,6 +28,52 @@ public class AssetTypeControllerTest {
     
     @InjectMocks
     private AssetTypeController controller;
+    
+    @Nested
+    class GetAssetTypeTest {
+        
+        @Test
+        void foundAssetType() {
+            
+            // Given
+            AssetType assetType = generateAssetType();
+            when(assetTypeService.getAssetType(ASSET_TYPE_ID)).thenReturn(Optional.of(assetType));
+            
+            // When
+            var response = controller.getAssetType(ASSET_TYPE_ID);
+            
+            // Then
+            assertEquals(HttpStatus.OK, response.getStatusCode());
+            assertNotNull(response.getBody());
+            
+            var responseMessageDTO = response.getBody();
+            assertEquals(200, responseMessageDTO.getStatusCode());
+            assertNotNull(responseMessageDTO.getData());
+            
+            var dto = responseMessageDTO.getData();
+            assertEquals(ASSET_TYPE_ID, dto.id());
+            
+        }
+        
+        @Test
+        void notFoundAssetType() {
+    
+            // Given
+            when(assetTypeService.getAssetType(ASSET_TYPE_ID)).thenReturn(Optional.empty());
+    
+            // When
+            var response = controller.getAssetType(ASSET_TYPE_ID);
+    
+            // Then
+            assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+            assertNotNull(response.getBody());
+    
+            var responseMessageDTO = response.getBody();
+            assertEquals(404, responseMessageDTO.getStatusCode());
+            assertNotNull(responseMessageDTO.getMessage());
+
+        }
+    }
     
     @Nested
     class GetAssetTypesTest {

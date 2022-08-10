@@ -10,10 +10,7 @@ import com.ikea.imc.pam.common.dto.ResponseMessageDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,6 +23,19 @@ public class AssetTypeController {
     
     public AssetTypeController(AssetTypeService assetTypeService) {
         this.assetTypeService = assetTypeService;
+    }
+    
+    @GetMapping("{id}")
+    public ResponseEntity<ResponseMessageDTO<AssetTypeDTO>> getAssetType(@PathVariable Long id) {
+        return assetTypeService
+            .getAssetType(id)
+            .map(assetType ->
+                ResponseEntityFactory.generateResponse(HttpStatus.OK, AssetTypeMapper.buildAssetTypeDTO(assetType)))
+            .orElseGet(() -> {
+                String message = "AssetType with id " + id + " could not be found";
+                log.debug(message);
+                return ResponseEntityFactory.generateResponseMessage(HttpStatus.NOT_FOUND, message);
+            });
     }
     
     @GetMapping

@@ -12,8 +12,10 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -26,6 +28,40 @@ public class AssetTypeServiceV1Test {
     
     @InjectMocks
     private AssetTypeServiceV1 service;
+    
+    @Nested
+    class GetAssetTypeTest {
+        
+        @Test
+        void foundAssetType() {
+            
+            // Given
+            AssetType assetType = generateAssetType();
+            when(assetTypeRepository.findById(ASSET_TYPE_ID)).thenReturn(Optional.of(assetType));
+            
+            // When
+            Optional<AssetType> response = service.getAssetType(ASSET_TYPE_ID);
+            
+            // Then
+            assertTrue(response.isPresent());
+            assertEquals(ASSET_TYPE_ID, response.get().getId());
+            
+        }
+        
+        @Test
+        void assetTypeNotFound() {
+    
+            // Given
+            when(assetTypeRepository.findById(ASSET_TYPE_ID)).thenReturn(Optional.empty());
+    
+            // When
+            Optional<AssetType> response = service.getAssetType(ASSET_TYPE_ID);
+    
+            // Then
+            assertTrue(response.isEmpty());
+        }
+        
+    }
     
     @Nested
     class GetAssetTypesTest {
