@@ -3,9 +3,11 @@ package com.ikea.imc.pam.asset.type.service.repository;
 import com.ikea.imc.pam.asset.type.service.repository.model.AssetType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface AssetTypeRepository extends JpaRepository<AssetType, Long> {
 
     List<AssetType> findAssetTypesByAssetTypeTechnical(@Param("technicalIds") List<Long> technicalIds);
