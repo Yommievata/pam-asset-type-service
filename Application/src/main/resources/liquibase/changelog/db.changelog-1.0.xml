@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="1659533339248-1" author="maw">
+        <sql dbms="!h2">SET IDENTITY_INSERT business_area ON</sql>
+        <insert tableName="business_area">
+            <column name="business_area_id" value="12"/>
+            <column name="name" value="External check-in"/>
+            <column name="sort_order" value="12"/>
+        </insert>
+        <sql dbms="!h2">SET IDENTITY_INSERT business_area OFF</sql>
+        <update tableName="price_item">
+            <column name="business_area_id" value="12"/>
+            <where>price_item_name='External Product picture check-in'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="business_area_id" value="12"/>
+            <where>price_item_name='External Motion media check-in'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="business_area_id" value="12"/>
+            <where>price_item_name='External Main Product Illustration check-in'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="business_model_id" value="1"/>
+            <column name="business_area_id" value="3"/>
+            <where>price_item_name='Installation guide'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="cost_type" value="Fixed Price"/>
+            <where>price_item_name='Installation guide'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="cost_type" value="Quotation Based"/>
+            <where>price_item_name='Other communication services'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Product Pictures"/>
+            <where>price_item_name='Main bundle/furniture set picture'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Product Pictures"/>
+            <where>price_item_name='Context bundle/furniture set picture'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Product Pictures"/>
+            <where>price_item_name='Food Package Product Picture'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Product Pictures"/>
+            <where>price_item_name='Food Included Product Picture'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Product Pictures"/>
+            <where>price_item_name='Food Texture Product Picture'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Product Pictures"/>
+            <where>price_item_name='Food Preparation Product Picture'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Product Pictures"/>
+            <where>price_item_name='Food Serving Product Picture'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Product Pictures"/>
+            <where>price_item_name='Designer photo'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Product Motion Media"/>
+            <where>price_item_name='Product Assembly Principle Film/Stop-Motion (PAF)'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Store Communication" />
+            <where>price_item_name='Guarantee brochure NEW'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Store Communication" />
+            <where>price_item_name='Guarantee brochure UPDATE'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Store Communication" />
+            <where>price_item_name='Symbol sign'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Store Communication" />
+            <where>price_item_name='Colored Buying Guide NEW'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Store Communication" />
+            <where>price_item_name='Colored Buying Guide UPDATE'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Store Communication" />
+            <where>price_item_name='Installation guide'</where>
+        </update>
+        <update tableName="price_item">
+            <column name="area" value="Store Communication" />
+            <where>price_item_name='Overview sign'</where>
+        </update>
+    </changeSet>
+</databaseChangeLog>
