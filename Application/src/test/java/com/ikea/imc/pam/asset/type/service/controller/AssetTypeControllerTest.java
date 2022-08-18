@@ -83,7 +83,7 @@ public class AssetTypeControllerTest {
         private static final Long ORGANISATION_ID = 333L;
         
         @Test
-        void withoutParameters() {
+        void withAllParameters() {
             
             // Given
             List<Long> technicalIds = List.of(TECHNICAL_ID);
@@ -98,7 +98,7 @@ public class AssetTypeControllerTest {
             when(assetTypeService.getAssetTypes(expectedParameters)).thenReturn(List.of(generateAssetType()));
             
             // When
-            var response = controller.getAssetTypes(technicalIds, classIds, organisationIds);
+            var response = controller.getAssetTypes(technicalIds, classIds, organisationIds, null);
             
             // Then
             assertEquals(HttpStatus.OK, response.getStatusCode());
@@ -107,19 +107,42 @@ public class AssetTypeControllerTest {
         }
         
         @Test
-        void withAllParameters() {
+        void withoutParameters() {
             
             // Given
             AssetTypeSearchParameters expectedParameters = AssetTypeSearchParameters.builder().build();
             when(assetTypeService.getAssetTypes(expectedParameters)).thenReturn(List.of(generateAssetType()));
     
             // When
-            var response = controller.getAssetTypes(null, null, null);
+            var response = controller.getAssetTypes(null, null, null, null);
     
             // Then
             assertEquals(HttpStatus.OK, response.getStatusCode());
             assertNotNull(response.getBody());
             
+        }
+    
+        @Test
+        void findByIds() {
+        
+            // Given
+            List<Long> assetTypeIds = List.of(ASSET_TYPE_ID);
+            when(assetTypeService.getAssetTypes(assetTypeIds)).thenReturn(List.of(generateAssetType()));
+        
+            // When
+            var response = controller.getAssetTypes(null, null, null, assetTypeIds);
+        
+            // Then
+            assertEquals(HttpStatus.OK, response.getStatusCode());
+            assertNotNull(response.getBody());
+        
+            var responseMessage = response.getBody();
+            assertEquals(200, responseMessage.getStatusCode());
+            assertNotNull(responseMessage.getData());
+        
+            var dtoList = responseMessage.getData();
+            assertEquals(1, dtoList.size());
+            assertEquals(ASSET_TYPE_ID, dtoList.get(0).id());
         }
         
         @Test
@@ -130,7 +153,7 @@ public class AssetTypeControllerTest {
             when(assetTypeService.getAssetTypes(expectedParameters)).thenReturn(List.of(generateAssetType()));
     
             // When
-            var response = controller.getAssetTypes(null, null, null);
+            var response = controller.getAssetTypes(null, null, null, null);
     
             // Then
             assertEquals(HttpStatus.OK, response.getStatusCode());

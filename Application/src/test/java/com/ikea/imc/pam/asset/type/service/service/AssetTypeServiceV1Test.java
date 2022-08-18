@@ -1,5 +1,6 @@
 package com.ikea.imc.pam.asset.type.service.service;
 
+import com.ikea.imc.pam.asset.type.service.exception.NotFoundException;
 import com.ikea.imc.pam.asset.type.service.repository.AssetTypeRepository;
 import com.ikea.imc.pam.asset.type.service.repository.model.AssetType;
 import com.ikea.imc.pam.asset.type.service.service.entity.AssetTypeSearchParameters;
@@ -14,8 +15,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -261,6 +261,68 @@ public class AssetTypeServiceV1Test {
             assertEquals(1, response.size());
             assertEquals(ASSET_TYPE_ID, response.get(0).getId());
         
+        }
+    }
+    
+    @Nested
+    class GetAssetTypesByIdsTest {
+        
+        private static final Long ASSET_TYPE_ID_2 = 4321L;
+        
+        @Test
+        void twoAssetTypeIds() {
+            
+            // Given
+            List<Long> assetTypeIds = List.of(ASSET_TYPE_ID, ASSET_TYPE_ID_2);
+            List<AssetType> foundAssetTypes = List.of(
+                generateAssetType(),
+                AssetType.builder().id(ASSET_TYPE_ID_2).build());
+            when(assetTypeRepository.findAssetTypesByIds(assetTypeIds)).thenReturn(foundAssetTypes);
+            
+            // When
+            var response = service.getAssetTypes(assetTypeIds);
+            
+            // Then
+            assertEquals(2, response.size());
+            assertEquals(ASSET_TYPE_ID, response.get(0).getId());
+            assertEquals(ASSET_TYPE_ID_2, response.get(1).getId());
+        }
+        
+        @Test
+        void oneAssetTypeIsMissing() {
+    
+            // Given
+            List<Long> assetTypeIds = List.of(ASSET_TYPE_ID, ASSET_TYPE_ID_2);
+            List<AssetType> foundAssetTypes = List.of(generateAssetType());
+            when(assetTypeRepository.findAssetTypesByIds(assetTypeIds)).thenReturn(foundAssetTypes);
+    
+            // When
+            NotFoundException exception =
+                assertThrows(NotFoundException.class, () -> service.getAssetTypes(assetTypeIds));
+    
+            // Then
+            assertNotNull(exception.getMessage());
+            assertTrue(exception.getMessage().contains(ASSET_TYPE_ID_2.toString()));
+            assertFalse(exception.getMessage().contains(ASSET_TYPE_ID.toString()));
+            
+        }
+        
+        @Test
+        void allAssetTypesAreMissing() {
+            
+            // Given
+            List<Long> assetTypeIds = List.of(ASSET_TYPE_ID, ASSET_TYPE_ID_2);
+            List<AssetType> foundAssetTypes = Collections.emptyList();
+            when(assetTypeRepository.findAssetTypesByIds(assetTypeIds)).thenReturn(foundAssetTypes);
+    
+            // When
+            NotFoundException exception = assertThrows(NotFoundException.class, () -> service.getAssetTypes(assetTypeIds));
+    
+            // Then
+            assertNotNull(exception.getMessage());
+            assertTrue(exception.getMessage().contains(ASSET_TYPE_ID_2.toString()));
+            assertTrue(exception.getMessage().contains(ASSET_TYPE_ID.toString()));
+    
         }
     }
     

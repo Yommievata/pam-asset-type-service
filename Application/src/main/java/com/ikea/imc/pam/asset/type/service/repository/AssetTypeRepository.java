@@ -9,7 +9,9 @@ import java.util.List;
 
 @Repository
 public interface AssetTypeRepository extends JpaRepository<AssetType, Long> {
-
+    
+    List<AssetType> findAssetTypesByIds(@Param("assetTypeIds") List<Long> assetTypeIds);
+    
     List<AssetType> findAssetTypesByAssetTypeTechnical(@Param("technicalIds") List<Long> technicalIds);
     
     List<AssetType> findAssetTypesByAssetTypeClass(@Param("classIds") List<Long> classIds);

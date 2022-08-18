@@ -1,5 +1,6 @@
 package com.ikea.imc.pam.asset.type.service.service;
 
+import com.ikea.imc.pam.asset.type.service.exception.NotFoundException;
 import com.ikea.imc.pam.asset.type.service.repository.AssetTypeRepository;
 import com.ikea.imc.pam.asset.type.service.repository.model.AssetType;
 import com.ikea.imc.pam.asset.type.service.service.entity.AssetTypeSearchParameters;
@@ -8,6 +9,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -23,6 +26,22 @@ public class AssetTypeServiceV1 implements AssetTypeService {
     public Optional<AssetType> getAssetType(Long assetTypeId) {
         log.debug("Get asset type with id {}", assetTypeId);
         return assetTypeRepository.findById(assetTypeId);
+    }
+    
+    @Override
+    public List<AssetType> getAssetTypes(List<Long> assetTypeIds) {
+        log.debug("Get asset types with ids {}", assetTypeIds);
+        List<AssetType> assetTypes = assetTypeRepository.findAssetTypesByIds(assetTypeIds);
+        Set<Long> foundAssetTypeIds = assetTypes.stream().map(AssetType::getId).collect(Collectors.toSet());
+        List<Long> notFoundAssetTypeIds = assetTypeIds.stream().filter(id -> !foundAssetTypeIds.contains(id)).toList();
+        
+        if (!notFoundAssetTypeIds.isEmpty()) {
+            String message = "Asset types with ids " + notFoundAssetTypeIds + " not found";
+            log.debug(message);
+            throw new NotFoundException(message);
+        }
+        
+        return assetTypes;
     }
     
     @Override

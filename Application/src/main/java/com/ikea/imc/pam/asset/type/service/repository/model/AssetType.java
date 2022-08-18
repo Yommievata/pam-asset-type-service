@@ -11,6 +11,15 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Builder(toBuilder = true)
+@NamedQuery(name = "AssetType.findAssetTypesByIds",
+    query = "select distinct at from AssetType at "
+        + "left join fetch at.assetTypeFunction atf "
+        + "left join fetch at.assetTypeOrganisation ato "
+        + "left join fetch at.assetTypeTechnical att "
+        + "left join fetch at.assetTypeClass atc "
+        + "left join fetch at.assetTypeTitle atTitle "
+        + "left join fetch at.allowedAssetTypeFormats aatf "
+        + "where at.id in :assetTypeIds AND at.active = true")
 @NamedQuery(name = "AssetType.findAssetTypesByAssetTypeTechnical",
     query = "select distinct at from AssetType at "
         + "left join fetch at.assetTypeFunction atf "

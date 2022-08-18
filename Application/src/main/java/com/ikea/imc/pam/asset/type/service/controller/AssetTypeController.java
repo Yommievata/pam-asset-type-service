@@ -42,9 +42,19 @@ public class AssetTypeController {
     public ResponseEntity<ResponseMessageDTO<List<AssetTypeDTO>>> getAssetTypes(
         @RequestParam(value = Paths.TECHNICAL_ID_PARAMETER, required = false) List<Long> technicalIds,
         @RequestParam(value = Paths.CLASS_ID_PARAMETER, required = false) List<Long> classIds,
-        @RequestParam(value = Paths.ORGANISATION_ID_PARAMETER, required = false) List<Long> organisationIds
+        @RequestParam(value = Paths.ORGANISATION_ID_PARAMETER, required = false) List<Long> organisationIds,
+        @RequestParam(value = Paths.ASSET_TYPE_ID_PARAMETER, required = false) List<Long> assetTypeIds
     ) {
+        
+        if (assetTypeIds != null && !assetTypeIds.isEmpty()) {
+            log.debug("Find asset types by id {}", assetTypeIds);
+            return ResponseEntityFactory.generateResponse(
+                HttpStatus.OK,
+                assetTypeService.getAssetTypes(assetTypeIds).stream().map(AssetTypeMapper::buildAssetTypeDTO).toList()
+            );
+        }
     
+        log.debug("Find asset types by search parameters");
         AssetTypeSearchParameters searchParameters = AssetTypeSearchParameters
             .builder()
             .technicalIds(technicalIds)
@@ -56,7 +66,5 @@ public class AssetTypeController {
             HttpStatus.OK,
             assetTypeService.getAssetTypes(searchParameters).stream().map(AssetTypeMapper::buildAssetTypeDTO).toList()
         );
-        
     }
-    
 }

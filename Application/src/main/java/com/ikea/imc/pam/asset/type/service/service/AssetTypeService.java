@@ -10,6 +10,8 @@ public interface AssetTypeService {
     
     Optional<AssetType> getAssetType(Long assetTypeId);
     
+    List<AssetType> getAssetTypes(List<Long> assetTypeIds);
+    
     List<AssetType> getAssetTypes(AssetTypeSearchParameters searchParameters);
     
 }
