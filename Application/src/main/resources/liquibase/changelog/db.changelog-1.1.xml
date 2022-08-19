@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="1660888205012-1" author="maw">
+        <update tableName="price_item">
+            <column name="asset_type_name" value="Product assembly principle film" />
+            <where>price_item_id=80</where>
+        </update>
+        <sql dbms="!h2">SET IDENTITY_INSERT price_item ON</sql>
+        <insert tableName="price_item">
+            <column name="price_item_id" value="99" />
+            <column name="price_item_name" value="Quality in context product picture" />
+            <column name="asset_type_name" value="" />
+            <column name="asset_format_name" value="N/A" />
+            <column name="content_type_name" value="" />
+            <column name="service_type_name" value="" />
+            <column name="template" value="0" />
+            <column name="new" value="1" />
+            <column name="price" value="25000" />
+            <column name="business_model_id" value="1" />
+            <column name="business_area_id" value="1" />
+            <column name="field3" value="1" />
+            <column name="imc_responsible_cc" value="" />
+            <column name="area" value="Product Pictures"/>
+            <column name="imc_assignment_area" value="Common content (ProdCom)" />
+            <column name="imc_assignment_group" value="" />
+            <column name="imc_assignment" value="" />
+            <column name="imc_sub_assignment" value="" />
+            <column name="content_area" value="" />
+            <column name="content_type" value="" />
+            <column name="cost_type" value="Fixed Price" />
+            <column name="ios_area" value="" />
+            <column name="r_and_pc_contact" value="" />
+            <column name="imc_area" value="" />
+            <column name="order_system" value="" />
+            <column name="content" value="" />
+        </insert>
+        <sql dbms="!h2">SET IDENTITY_INSERT price_item OFF</sql>
+    </changeSet>
+</databaseChangeLog>
