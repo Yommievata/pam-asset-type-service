@@ -270,7 +270,7 @@ public class AssetTypeMapperTest {
             .assetTypeId(ASSET_TYPE_ALLOWED_ASSET_TYPE_FORMAT_ASSET_TYPE_ID)
             .assetTypeFormat(getAssetTypeFormat().build())
             .defaultPackage(ASSET_TYPE_ALLOWED_ASSET_TYPE_FORMAT_DEFAULT_PACKAGE)
-            .delete(ASSET_TYPE_ALLOWED_ASSET_TYPE_FORMAT_DELETE);
+            .deleted(ASSET_TYPE_ALLOWED_ASSET_TYPE_FORMAT_DELETE);
     }
     
     private static AssetTypeFormat.AssetTypeFormatBuilder getAssetTypeFormat() {

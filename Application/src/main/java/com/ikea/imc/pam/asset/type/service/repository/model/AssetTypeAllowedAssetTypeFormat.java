@@ -25,5 +25,5 @@ public class AssetTypeAllowedAssetTypeFormat extends AbstractEntity {
     
     private Boolean defaultPackage;
     
-    private Boolean delete;
+    private Boolean deleted;
 }

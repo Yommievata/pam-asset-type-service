@@ -27,4 +27,7 @@
                              referencedTableName="asset_type"
                              referencedColumnNames="id"/>
   </changeSet>
+  <changeSet id="1662019896114-1" author="carl-henrik-laulaja (generated)">
+    <renameColumn tableName="asset_type_allowed_asset_type_format" oldColumnName="delete" newColumnName="deleted" />
+  </changeSet>
 </databaseChangeLog>
