@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1663068466521-1" author="alimajed">
+        <update tableName="price_item">
+            <column name="price_item_name" value="Non-standardised on-pack communication"/>
+            <column name="asset_type_name" value="Non-standardised on-pack communication"/>
+            <column name="business_model_id" value="2"/>
+            <where>price_item_id=94</where>
+        </update>
+        <update tableName="price_item">
+            <column name="business_model_id" value="3"/>
+            <where>price_item_id=79</where>
+        </update>
+        <delete tableName="price_item">
+            <where>price_item_id=80</where>
+        </delete>
+    </changeSet>
+</databaseChangeLog>
