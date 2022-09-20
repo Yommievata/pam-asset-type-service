@@ -33,6 +33,6 @@ public class PriceItemServiceV1 implements PriceItemService {
     @Override
     public List<PriceItem> getAllPriceItems() {
         log.debug("Get all price items");
-        return priceItemRepository.findAll();
+        return priceItemRepository.listAllPriceItems();
     }
 }

@@ -33,4 +33,9 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd">
     <include file="liquibase/changelog/price-item-excel-import-v2.xml" />
     <include file="liquibase/changelog/price-item-excel-import-v3.xml" />
     <include file="liquibase/changelog/price-item-excel-import-v4.xml" />
+    <include file="liquibase/changelog/asset-type-technical-data-v2.xml" />
+    <include file="liquibase/changelog/asset-type-format-data-v2.xml" />
+    <include file="liquibase/changelog/asset-type-allowed-asset-type-format-data-v2.xml" />
+    <include file="liquibase/changelog/asset-type-data-v2.xml" />
+    <include file="liquibase/changelog/price-item-v2.xml" />
 </databaseChangeLog>

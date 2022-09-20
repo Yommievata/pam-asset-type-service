@@ -85,7 +85,7 @@ public class PriceItemServiceV1Test {
                 generatePriceItem(PRICE_ITEM_ID_1, CostType.FIXED_PRICE),
                 generatePriceItem(PRICE_ITEM_ID_2, CostType.HOURLY_PRICE)
             );
-            when(priceItemRepository.findAll()).thenReturn(priceItems);
+            when(priceItemRepository.listAllPriceItems()).thenReturn(priceItems);
             
             // When
             List<PriceItem> priceItemsResponse = service.getPriceItems(List.of());
@@ -123,7 +123,7 @@ public class PriceItemServiceV1Test {
                 generatePriceItem(PRICE_ITEM_ID_1, CostType.FIXED_PRICE),
                 generatePriceItem(PRICE_ITEM_ID_2, CostType.HOURLY_PRICE)
             );
-            when(priceItemRepository.findAll()).thenReturn(priceItems);
+            when(priceItemRepository.listAllPriceItems()).thenReturn(priceItems);
             
             // When
             List<PriceItem> priceItemsResponse = service.getAllPriceItems();
@@ -140,7 +140,7 @@ public class PriceItemServiceV1Test {
         void getPriceItemsNothingFound() {
             
             // Given
-            when(priceItemRepository.findAll()).thenReturn(List.of());
+            when(priceItemRepository.listAllPriceItems()).thenReturn(List.of());
             
             // When
             List<PriceItem> priceItemsResponse = service.getAllPriceItems();

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.7.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="1663587431216-3" author="carl-henrik-laulaja (generated)">
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_allowed_asset_type_format ON</sql>
+        <insert tableName="asset_type_allowed_asset_type_format">
+            <column name="id" value="253"/>
+            <column name="asset_type_id" value="156" />
+            <column name="asset_type_format_id" value="218" />
+            <column name="default_package" value="false" />
+            <column name="deleted" value="false" />
+        </insert>
+        <sql dbms="!h2">SET IDENTITY_INSERT asset_type_allowed_asset_type_format OFF</sql>
+    </changeSet>
+</databaseChangeLog>

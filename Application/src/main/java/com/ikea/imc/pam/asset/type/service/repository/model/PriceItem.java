@@ -11,7 +11,14 @@ import javax.persistence.*;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Builder(toBuilder = true)
 @NamedQuery(name = "PriceItem.getPriceItemsByCostType",
-    query = "select p from PriceItem p where p.costType in :costTypes")
+    query = "select p from PriceItem p "
+        + "join fetch p.businessModel bm "
+        + "join fetch p.businessArea ba "
+        + "where p.costType in :costTypes")
+@NamedQuery(name = "PriceItem.listAllPriceItems",
+    query = "select p from PriceItem p "
+        + "join fetch p.businessModel bm "
+        + "join fetch p.businessArea ba")
 public class PriceItem extends AbstractEntity {
     
     @Id

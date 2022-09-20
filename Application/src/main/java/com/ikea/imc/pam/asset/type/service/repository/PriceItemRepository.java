@@ -11,4 +11,6 @@ import java.util.List;
 public interface PriceItemRepository extends JpaRepository<PriceItem, Long> {
     
     List<PriceItem> getPriceItemsByCostType(@Param("costTypes") List<String> costTypes);
+    
+    List<PriceItem> listAllPriceItems();
 }
