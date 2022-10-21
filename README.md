@@ -1,4 +1,4 @@
-# pam-assert-type-service
+# pam-asset-type-service
 
 To be able to run the application properly you need to have all this installed
 
@@ -15,16 +15,16 @@ how to set everything up.
 1. git clone git@github.com:icomdev/pam-assert-type-service.git
 2. IntelliJ -> New -> Project from Existing Sources...
 3. Select the root pom
-4. After the project is loaded, edit 'StartSpringbootApi' configuration, add environment variables.
+4. After the project is loaded, edit 'StartSpringbootApi' configuration, add *Environment Variable*.
 5. Run the application
 
 
-Navigate to the root of pam-assert-type-service **mvn clean install**, this will create everything that pam-assert-type-service
+Navigate to the root of pam-asset-type-service **mvn clean install**, this will create everything that pam-assert-type-service
 need itself.
 
 To debug connect a *Remote JVM Debug* configuration on port **5006**
 
-### Environmental variables
+### Environment variables
 
 Important environment variables and how to set them up to get everything running.
 <br> *Note: The variables are set in the StartSpringbootApi configuration in Intellij as it holds configuration settings for the environment you will be using*
@@ -44,7 +44,7 @@ Budget-service uses the following environment variables:
 
 ### Local
 
-pam-asset-type-service uses the H2 engine to run an embedded Postgres db in local and its pipelines.
+pam-asset-type-service uses the H2 engine to run an embedded db in local environment and its pipelines.
 
 To view the database:
 
@@ -71,9 +71,9 @@ To view the database it's recommended to use pgAdmin:
 ## Swagger
 
 Swagger includes automated documentation of the restful APIs expressed using json. It displays all the endpoints in a project and generates test-cases
-for those. To be able to test the endpoints, firstly an authorization is needed through OAuth2. After that all endpoints can be tested out.
+for those. To be able to test the endpoints, an authorization is needed through OAuth2. After that all endpoints can be tested out.
 <br>
-The site displays which environment that the project are currently running on under the title "Environment:".
+The site displays which environment that the project is currently running on under the title "Environment:".
 <br>
 When the asset-type-service application is running:
 * To access the site for the Local environment, swagger can be found with this url `http://localhost:23151/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/`
@@ -84,7 +84,7 @@ When the asset-type-service application is running:
 
 The configuration file for swagger is in **apiconfiguration/OpenapiConfiguration.java**
 
-Note: All environment except local are protected using client ID. To get access to the environments, fetch client ID from Azure Key Vault.
+Note: All environments except local are protected using client ID. To get access to the environments, fetch client ID from Azure Key Vault [https://portal.azure.com/#@OneIIG.onmicrosoft.com/resource/subscriptions/73352462-5185-4eab-afca-eed6b857bbe0/resourceGroups/BackendRewrite/providers/Microsoft.Web/sites/app-pam-asset-type-service-dev/configuration].
 
 ## Client URL for Environment
 
@@ -104,16 +104,12 @@ Note: All environment except local are protected using client ID. To get access 
 3. Create a pull request to master and wait for approval
 4. Merge to main (Deploys automatically to dev)
 5. Test in dev environment
-6. If test is successful, click on deploy in dev environment. This will deploy to test
+6. If test is successful, click on deploy in test environment. This will deploy to test
 7. Test in test environment
-8. If test is successful, click on deploy in test environment. This will deploy to stage
+8. If test is successful, click on deploy in stage environment. This will deploy to stage
 9. Test in stage environment
-10. If test is successful, click on deploy in stage environment. This will deploy to prod
+10. If test is successful, click on deploy in prod environment. This will deploy to prod
 11. Test in prod environment if needed
-
-## Docker
-
-Docker is used to run the application in a container. The dockerfile is located in the root of the project.
 
 ## How to use Asset-type-service-client
 
