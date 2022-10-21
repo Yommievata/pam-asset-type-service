@@ -111,6 +111,10 @@ Note: All environments except local are protected using client ID. To get access
 10. If test is successful, click on deploy in prod environment. This will deploy to prod
 11. Test in prod environment if needed
 
+## Docker
+
+Docker is used when running the component tests. The docker-compose.yml file is located in the root of the project.
+
 ## How to use Asset-type-service-client
 
 Changes in Asset-type-service-client means the version of the client has to be changed in the Asset-type-service-client pom.xml. This means that every change in the Client has to be merged first before a new version of the client is published (Version can be found in Azure Artifacts).
