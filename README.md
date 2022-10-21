@@ -84,7 +84,7 @@ When the asset-type-service application is running:
 
 The configuration file for swagger is in **apiconfiguration/OpenapiConfiguration.java**
 
-Note: All environments except local are protected using client ID. To get access to the environments, fetch client ID from Azure Key Vault [https://portal.azure.com/#@OneIIG.onmicrosoft.com/resource/subscriptions/73352462-5185-4eab-afca-eed6b857bbe0/resourceGroups/BackendRewrite/providers/Microsoft.Web/sites/app-pam-asset-type-service-dev/configuration].
+Note: All environments except local are protected using client ID. To get access to the environments, fetch client ID from Azure Key Vault [https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites]. Find the project environment and go to the configuration tab. The client ID is under the section "App settings".
 
 ## Client URL for Environment
 
